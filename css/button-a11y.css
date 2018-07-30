@@ -1,5 +1,6 @@
-.fonte{
-    position:fixed;
+.posicaoBotao{
+    position: relative;
+    right: 120px;
 }
 
 .button {
@@ -7,6 +8,6 @@
     background-color: #008CBA;
     padding: 1px;
     border: #008CBA solid 1px;
-    font-size: 30px;
-    width: 40px;
+    font-size: 17px;
+    width: 25px;
 }
