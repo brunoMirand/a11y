@@ -363,7 +363,6 @@
         }
     </script>
 
-    
     <link rel="icon" href="img/favicon.ico">
     <!--[if lt IE 9]>
         <script src="/js/catho/html5.js" type="text/javascript"></script>
@@ -373,66 +372,62 @@
 
 <body class="lowBandwidth isModernDevice noResponsive  notIE">
     <header id="top" class="header b2c">
-        <nav>
-        <div class="topBar topBarResponsive topoVisivel">
-            <div class="container clearfix">
-                <ul class="topTab">
-                    <li class="b2c">
-                        <a href="https://www.catho.com.br/" class="selected" aria-label="Área do Candidato" onclick="s_objectID='aba_candidatos'; $.fazRequisicao(this)"> <i aria-hidden="true">candidatos</i></a>
-                    </li>   
+        <nav role="navigation">
+            <div class="topBar topBarResponsive topoVisivel">
+                <div class="container clearfix">
+                    <ul class="topTab">
+                        <li class="b2c">
+                            <a href="https://www.catho.com.br/" class="selected" aria-label="Área do Candidato" onclick="s_objectID='aba_candidatos'; $.fazRequisicao(this)"> <i aria-hidden="true">candidatos</i></a>
+                        </li>
 
-                    <li class="b2b">
-                        <a href="https://www.catho.com.br/empresa/" class="" aria-label="Acesse a Catho para Empresas" onclick="s_objectID='aba_empresas'; $.fazRequisicao(this)" id="aba_empresas"><i aria-hidden="true">empresas</i></a>
-                    </li>
+                        <li class="b2b">
+                            <a href="https://www.catho.com.br/empresa/" class="" aria-label="Acesse Catho para Empresas" onclick="s_objectID='aba_empresas'; $.fazRequisicao(this)" id="aba_empresas"><i aria-hidden="true">empresas</i></a>
+                        </li>
 
-                    <li class="cursos">
-                        <a href="//www.catho.com.br/educacao/" class="" aria-label="Acesse a Catho Educação" onclick="s_objectID='aba_cursos'; $.fazRequisicao(this)" id="aba_cursos"><i aria-hidden="true">educação</i></a>
-                    </li>
-                </ul>
+                        <li class="cursos">
+                            <a href="//www.catho.com.br/educacao/" class="" aria-label="Acesse Catho Educação" onclick="s_objectID='aba_cursos'; $.fazRequisicao(this)" id="aba_cursos"><i aria-hidden="true">educação</i></a>
+                        </li>
+                    </ul>
 
-                <div class="topRight">
-                    <a onclick="s_objectID='menu_ajuda'; $.fazRequisicao(this)" id="menu_ajuda" href="https://www.catho.com.br/help/" target="_blank" class="help" title="Ir para menu ajuda"></a>
+                    <div class="topRight">
+                        <a onclick="s_objectID='menu_ajuda'; $.fazRequisicao(this)" aria-label="Acesse o menu ajuda" id="menu_ajuda" href="https://www.catho.com.br/help/" target="_blank" class="help"></a>
+                    </div>
                 </div>
             </div>
-        </div>
         </nav>
         <div class="containerTopoMenu top isDeslogado clearfix">
             <div class="container">
                 <div class="logoContainer">
                     <span class="menuHamburguer" id="menuHamburguer"></span>
 
-                    <a class="logoHeader logoCatho hiddenText" title="Logo do Site (Catho)" href="https://www.catho.com.br/"><i aria-hidden="true">Logo da Catho</i></a>
+                    <a class="logoHeader logoCatho hiddenText" role="presentation" title="Logo do Site (Catho)" href="https://www.catho.com.br/"><i aria-hidden="true">Logo da Catho</i></a>
                 </div>
                 <span class="dragCloseMenu" id="dragCloseMenu">
             <span></span>
                 </span>
 
                 <div class="menuHeader" id="menuHeader">
-                    <nav>
-                        <ul>
+                    <nav role="navigation">
+                        <ul role="menubar">
                             <li>
-                                <a class="" onclick="s_objectID='menu_buscar_vagas'; $.fazRequisicao(this)" id="menu_buscar_vagas" href="#">Buscar vagas</a>
+                                <a class="" onclick="s_objectID='menu_buscar_vagas'; $.fazRequisicao(this)" aria-label="Busque as melhores vagas" id="menu_buscar_vagas" href="#"><i aria-hidden="true">Buscar vagas</i></a>
                             </li>
                             <li>
-                                <a class="" onclick="s_objectID='menu_suspenso_profissoes'; $.fazRequisicao(this)" id="menu_suspenso_profissoes" href="#">Guia de profissões</a>
+                                <a class="" onclick="s_objectID='menu_suspenso_profissoes'; $.fazRequisicao(this)" aria-label="Guia de profissões e salarios" id="menu_suspenso_profissoes" href="#"><i aria-hidden="true">Guia de profissões</i></a>
                             </li>
                             <li>
-                                <a class="" onclick="s_objectID='menu_suspenso_por_dentro'; $.fazRequisicao(this)" id="menu_suspenso_por_dentro" href="#">
-                    Por dentro das empresas
-                </a>
+                                <a class="" onclick="s_objectID='menu_suspenso_por_dentro'; $.fazRequisicao(this)" aria-label="Por dentro das empresas. Descubra como é trabalhar em empresas em todo Brasil" id="menu_suspenso_por_dentro" href="#"><i aria-hidden="true">Por dentro das empresas</i></a>
                             </li>
-                            <li class="subMenuItem ">
-                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix ">
-                        Soluções para candidatos
-                    </a>
-                                <ul class="subMenuServicos isDeslogado autoResizeAndOverflow">
-                                    <li>
+                            <li class="subMenuItem" role="menuitem" aria-haspopup="false">
+                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" aria-expanded="false" aria-label="Soluções para candidatos e dicas para o seu sucesso" id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix "><i aria-hidden="true">Soluções para candidatos</i></a>
+                                <ul class="subMenuServicos isDeslogado autoResizeAndOverflow" role="menubar" style="display: none;">
+                                    <li role="menuitem">
                                         <a class="" onclick="s_objectID='menu_suspenso_aviso'; $.fazRequisicao(this)" id="menu_suspenso_aviso" href="/aviso-vagas/listagem/">Aviso de vagas</a>
                                     </li>
-                                    <li>
+                                    <li role="menuitem">
                                         <a href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&amp;usr[plano_id]=1&amp;cur[perfil_id]=1&amp;cur[use_personalizado]=0&amp;a=0&amp;ppd=0&amp;tipoinclusao=807">Envie seu Currículo por 7 dias grátis</a>
                                     </li>
-                                    <li>
+                                    <li role="menuitem">
                                         <a class="" onclick="s_objectID='menu_suspenso_profissoes'; $.fazRequisicao(this)" id="menu_suspenso_profissoes" href="/profissoes/">Guia de profissões</a>
                                     </li>
                                     <li class="escondeLinkSmallDevices">
@@ -489,15 +484,15 @@
                                 </ul>
                             </li>
                             <li>
-                                <a onclick="s_objectID='menu_bolsas_de_estudo'; $.fazRequisicao(this)" id="menu_bolsas_de_estudo" href="//www.catho.com.br/educacao/" target="_blank">Bolsas de estudo</a>
+                                <a onclick="s_objectID='menu_bolsas_de_estudo'; $.fazRequisicao(this)" aria-label="Encontre os melhores cursos e bolsas de estudo com Desconto nas Universidades" id="menu_bolsas_de_estudo" href="//www.catho.com.br/educacao/" target="_blank"><i>Bolsas de estudo</i></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="actionsEntrar">
-                    <a href="javascript:void(0);" class="btnLogin" id="btnLogin">Login</a>
-                    <a href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&amp;usr%5Bplano_id%5D=1&amp;cur%5Bperfil_id%5D=1&amp;cur%5Buse_personalizado%5D=0&amp;a=0&amp;ppd=0&amp;tipoinclusao=903">Assine</a>
+                    <a href="javascript:void(0);" role="button" title="Acesse para efetuar login caso já tenha cadastro." class="btnLogin" id="btnLogin"><i aria-hidden="true">Login</i></a>
+                    <a href="#" role="button" title="Assine a Catho e Consiga seu emprego ideal."><i aria-hidden="true">Assine</a></i>
 
                     <div class="loginSuspenso comBoxSocial" id="loginSuspenso">
                         <iframe src="https://safe.catho.com.br/login/tipo/tooltip/" frameborder="0" scrolling="no" id="loginHttps"></iframe>
@@ -517,42 +512,44 @@
 
         <div class="bannerHumanizado">
             <div class="bannerResponsive">
-                <p class="pequeno">Experimente por <a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" title="Cadastre-se por 7 dias grátis">7 dias grátis</a>.</p>
-                <p class="medio">A gente trabalha pelo seu trabalho. Experimente por <a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" title="Cadastre-se por 7 dias grátis">7 dias grátis</a>.</p>
-                <p class="grande">700 pessoas por dia encontram o trabalho com a Catho. Seja uma delas. Experimente por <a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" title="Cadastre-se por 7 dias grátis">7 dias grátis</a>.</p>
+                <p class="pequeno"><i aria-hidden="true">Experimente por </i><a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" title="Cadastre-se por 7 dias grátis"><i aria-hidden="true">7 dias grátis</i></a>.</p>
+                <p class="medio"><i aria-hidden="true">A gente trabalha pelo seu trabalho. Experimente por</i> <a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" title="Cadastre-se por 7 dias grátis"><i aria-hidden="true">7 dias grátis</a></i>.</p>
+                <p class="grande"><i aria-hidden="true">700 pessoas por dia encontram o trabalho com a Catho. Seja uma delas. Experimente por </i><a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" title="Cadastre-se por 7 dias grátis"><i aria-hidden="true">7 dias grátis</i></a>.</p>
 
-                <div class="dadosRedesSociais" id="cadastroSocial" data-socialid="300">
-                    <ul>
+                <div class="dadosRedesSociais" role="menubar" id="cadastroSocial" data-socialid="300">
+                    <ul role="menuitem">
                         <li>
-                            <a href="#"  id="btnFacebook" class="facebook"></a>
+                            <a href="#" id="btnFacebook" role="button" aria-label="Cadastre-se com o Facebook" class="facebook"></a>
                         </li>
                         <li>
-                            <a href="#" id="btnGoogle" class="gplus"></a>
+                            <a href="#" id="btnGoogle" role="button" aria-label="Cadastre-se com o Gmail" class="gplus"></a>
+                        </li>
+
+                        <li>
+                            <a href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&amp;usr%5Bplano_id%5D=1&amp;cur%5Bperfil_id%5D=1&amp;cur%5Buse_personalizado%5D=0&amp;a=0&amp;ppd=0&amp;tipoinclusao=820" role="button" class="buttonFlat buttonAzulFlat" title="Cadastre-se na Catho"><i aria-hidden="true">cadastre-se</i></a>
                         </li>
                     </ul>
-
-                    <a href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&amp;usr%5Bplano_id%5D=1&amp;cur%5Bperfil_id%5D=1&amp;cur%5Buse_personalizado%5D=0&amp;a=0&amp;ppd=0&amp;tipoinclusao=820" class="buttonFlat buttonAzulFlat" title="cadastrar">cadastre-se</a>
                 </div>
             </div>
 
-            <div class="imgBanner animaBanner" alt="Buscando emprego na catho">
+            <div class="imgBanner animaBanner" role="img" alt="Imagem de fundo, uma mulher negra sorrindo">
             </div>
 
-            <section class="containerHomeVagas container">
+            <section class="containerHomeVagas container" role="main">
 
                 <header>
                     <h1>
-                        Busque suas vagas
-                        <span class="totalVagas">Mais de 217.184 mil vagas de emprego disponiveis</span>
+                        Busque suas vagas 
+                        <span class="totalVagas"> Mais de 217.184 mil vagas de emprego disponiveis</span>
                     </h1>
                 </header>
                 <article>
                     <section class="jobSearch filtroHomeResponsive">
                         <article>
-                            <form action="/vagas/" method="get" autocomplete="off" class="formFlat formBuscaVagas" id="formBuscaVagas" novalidate="novalidate" sendautocomplete="off">
-                                <label class="">
-                                    <span class="label">Cargo ou palavra-chave</span>
-                                    <input type="text" name="q" id="cargoDesejado" class="cargoDesejado " data-callback="BaseForm.validation.job" data-suggestHeight="82px" value="" autocomplete="nope" />
+                            <form action="/vagas/" method="get"  autocomplete="off" class="formFlat formBuscaVagas" id="formBuscaVagas" novalidate="novalidate" sendautocomplete="off">
+                                <label  for="cargoDesejado"  class=""  title="Digite cargo ou palavra-chave para fazer a busca." role="search"> 
+                                    <!--<span class="label" title="Digite Cargo ou palavra-chave para fazer a buscar"><i aria-hidden="true"> Cargo ou palavra-chave</i></span>-->
+                                    <input type="text"  name="q" id="cargoDesejado" class="cargoDesejado " data-callback="BaseForm.validation.job" data-suggestHeight="82px" value="" aria-hidden="true" placeholder="Cargo ou Palavra-Chave" autocomplete="off" />
                                 </label>
 
                                 <div class="filtroLocalidade multipleSelect" data-clearcallback="BaseForm.validation.clearLocality">
@@ -561,10 +558,11 @@
                                     <input type="hidden" name="estado_id[]" id="stateId" value="" />
                                     <input type="hidden" name="regiao_id[]" id="regionId" value="" />
                                     <input type="hidden" name="cidade_id[]" id="cityId" value="" />
+                                    <label for="cidadeCa" class="" title="Digite Cidade, Estado ou região para fazer a busca." role="search"> </label>
+                                    <!--<span class="label">Cidade, estado ou região</span>-->
 
-                                    <span class="label">Cidade, estado ou região</span>
-
-                                    <input type="text" name="cidade" id="cidade" class="cidade" data-callback="BaseForm.validation.locality" data-suggestHeight="82px" autocomplete="nope" value="" />
+                                    <input type="text" name="cidade" id="cidadeCa" class="cidade" data-callback="BaseForm.validation.locality" data-suggestHeight="82px" aria-hidden="true" placeholder="Cidade, estado ou região"  autocomplete="off" value="" />
+                                    
                                 </div>
                                 <div class="envolveBtnBuscaVagas">
                                     <input type="submit" value="buscar" class="buttonFlat buttonAzulFlat buttonBuscarVagas" title="buscar vaga" />
@@ -681,7 +679,7 @@
                 <ul>
                     <li class="empresa">
                         <a href="/vagas-emprego/sodexo-motivation-solutions/7507/">
-                            <img width="120" height="40" src="https://www3.catho.com.br/emp/logotipos/7507.gif" alt="Empregos na sodexo-motivation-solutions" title=""/>
+                            <img width="120" height="40" src="https://www3.catho.com.br/emp/logotipos/7507.gif" alt="Empregos na sodexo-motivation-solutions" title="" />
                             <p class="totalVagas">2 vagas</p>
                         </a>
                     </li>
@@ -724,7 +722,7 @@
                 <section>
                     <div class="geralDepoimentos">
                         <article>
-                            <div class="fotoUsuario"><img src="//static.catho.com.br/images/fotos/6785288.foto" alt="Candidato"/></div>
+                            <div class="fotoUsuario"><img src="//static.catho.com.br/images/fotos/6785288.foto" alt="Candidato" /></div>
 
                             <div class="texto"><span class="seta-esquerda"></span>
                                 <h3>Excelente intermediadora de oportunidade de trabalho. </h3>
@@ -732,7 +730,7 @@
                             </div>
                         </article>
                         <article>
-                            <div class="fotoUsuario"><img src="//static.catho.com.br/images/fotos/40267795.foto" alt="Candidato"/></div>
+                            <div class="fotoUsuario"><img src="//static.catho.com.br/images/fotos/40267795.foto" alt="Candidato" /></div>
 
                             <div class="texto"><span class="seta-esquerda"></span>
                                 <h3>É um bom site pra quem está em busca de emprego. </h3>
@@ -810,8 +808,8 @@
                     <li><a href="https://www.catho.com.br/vagas/sp/campinas/" title="Vagas de emprego em Campinas - SP">Campinas</a></li>
                     <li><a href="https://www.catho.com.br/vagas/sp/sorocaba/" title="Vagas de emprego em Sorocaba - SP">Sorocaba</a></li>
                     <li><a href="https://www.catho.com.br/vagas/sc/florianopolis/" title="Vagas de emprego em Florianópolis - SC">Florianópolis</a></li>
-                    <li><a href="https://www.catho.com.br/vagas/pr/maringa/"   title="Vagas de emprego em Maringá">Maringá</a></li>
-                    <li><a href="https://www.catho.com.br/vagas/pr/curitiba/"  title="Vagas de emprego em Curitiba - PR" role="navigation">Curitiba</a></li>
+                    <li><a href="https://www.catho.com.br/vagas/pr/maringa/" title="Vagas de emprego em Maringá">Maringá</a></li>
+                    <li><a href="https://www.catho.com.br/vagas/pr/curitiba/" title="Vagas de emprego em Curitiba - PR" role="navigation">Curitiba</a></li>
                     <li><a href="https://www.catho.com.br/vagas/go/goiania/" title="Vagas de emprego em Goiânia - GO">Goiânia</a></li>
                     <li><a href="https://www.catho.com.br/vagas/am/manaus/" title="Vagas de emprego em Manaus - AM">Manaus</a></li>
                     <li><a href="https://www.catho.com.br/vagas/sc/joinville/" title="Vagas de emprego em Joinville - SC">Joinville</a></li>
