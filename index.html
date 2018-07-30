@@ -266,7 +266,7 @@
     <meta name="android-catho-app" content="app-id=br.com.appfactory.catho">
     <title>Empregos e Vagas de emprego em todo o Brasil | Catho</title>
 
-    <link href="home-catho.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/home-catho.css" media="screen" rel="stylesheet" type="text/css">
     <link href="https://www.catho.com.br/" rel="canonical">
 
     <script type="text/javascript">
@@ -362,6 +362,9 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="css/font.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/font.js"></script>
 
     <link rel="icon" href="img/favicon.ico">
     <!--[if lt IE 9]>
@@ -390,6 +393,11 @@
                     </ul>
 
                     <div class="topRight">
+                        <!-- Botões de Acessibilidade -->
+                            <div class="fonte">
+                                    <button class="button" onClick="fonte('a');">+</button> <!-- Botão + -->
+                                    <button class="button" onClick="fonte('d');">-</button> <!-- Botão - -->
+                            </div>
                         <a onclick="s_objectID='menu_ajuda'; $.fazRequisicao(this)" aria-label="Acesse o menu ajuda" id="menu_ajuda" href="https://www.catho.com.br/help/" target="_blank" class="help"></a>
                     </div>
                 </div>

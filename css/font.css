@@ -1,0 +1,12 @@
+.fonte{
+    position:fixed;
+}
+
+.button {
+    margin-top: 5px;
+    background-color: #008CBA;
+    padding: 1px;
+    border: #008CBA solid 1px;
+    font-size: 30px;
+    width: 40px;
+}
