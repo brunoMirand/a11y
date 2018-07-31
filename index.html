@@ -365,6 +365,7 @@
     <link rel="stylesheet" href="css/button-a11y.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/button-a11y.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" href="img/favicon.ico">
     <!--[if lt IE 9]>
@@ -391,16 +392,19 @@
                             <a href="//www.catho.com.br/educacao/" class="" aria-label="Acesse Catho Educação" onclick="s_objectID='aba_cursos'; $.fazRequisicao(this)" id="aba_cursos"><i aria-hidden="true">educação</i></a>
                         </li>
                     </ul>
+                    
 
                     <div class="topRight">
-                        <!-- Botões de Acessibilidade -->
-                            <div class="posicaoBotao">
-                                    <button class="button"  title="Aumentar fonte do conteúdo." onClick="fonte('a');">+</button> <!-- Botão + -->
-                                    <button class="button"  title="Diminuir fonte do conteúdo." onClick="fonte('d');">-</button> <!-- Botão - -->
-                            </div>
+                        
                         <a onclick="s_objectID='menu_ajuda'; $.fazRequisicao(this)" aria-label="Acesse o menu ajuda" id="menu_ajuda" href="https://www.catho.com.br/help/" target="_blank" class="help"></a>
                     </div>
+                    <!-- Botões de Acessibilidade -->
+                <div class="posicaoBotao">
+                        <button class="button"  title="Aumentar fonte do conteúdo." onClick="fonte('a');">+</button> <!-- Botão + -->
+                        <button class="button"  title="Diminuir fonte do conteúdo." onClick="fonte('d');">-</button> <!-- Botão - -->
                 </div>
+                </div>
+                
             </div>
         </nav>
         <div class="containerTopoMenu top isDeslogado clearfix">

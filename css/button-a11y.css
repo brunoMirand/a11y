@@ -1,6 +1,6 @@
 .posicaoBotao{
-    position: relative;
-    right: 120px;
+    position: absolute;
+    left: 82%;
 }
 
 .button {

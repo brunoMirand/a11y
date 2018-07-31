@@ -9313,7 +9313,7 @@ section.depoimentos .geralDepoimentos article .texto h3 {
     letter-spacing: normal;
     color: #999;
     font-style: italic;
-    margin: 0 0 15px 0
+    margin: -75px 0 15px 0
 }
 
 section.depoimentos .geralDepoimentos article .texto:after {
@@ -9811,7 +9811,7 @@ section.bannerDfp {
     font-size: 6.666666666666667em;
     font-family: Times;
     font-weight: 700;
-    content: "";
+    content: "“";
     color: #f99b09;
     position: absolute;
     text-align: right;
@@ -9823,7 +9823,7 @@ section.bannerDfp {
     font-size: 4.166666666666667em;
     font-weight: 700;
     font-family: Times;
-    content: "";
+    content: "”";
     color: #f99b09;
     position: absolute;
     text-align: right
