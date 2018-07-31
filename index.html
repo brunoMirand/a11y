@@ -395,8 +395,8 @@
                     <div class="topRight">
                         <!-- Botões de Acessibilidade -->
                             <div class="posicaoBotao">
-                                    <button class="button" onClick="fonte('a');">+</button> <!-- Botão + -->
-                                    <button class="button" onClick="fonte('d');">-</button> <!-- Botão - -->
+                                    <button class="button"  title="Aumentar fonte do conteúdo." onClick="fonte('a');">+</button> <!-- Botão + -->
+                                    <button class="button"  title="Diminuir fonte do conteúdo." onClick="fonte('d');">-</button> <!-- Botão - -->
                             </div>
                         <a onclick="s_objectID='menu_ajuda'; $.fazRequisicao(this)" aria-label="Acesse o menu ajuda" id="menu_ajuda" href="https://www.catho.com.br/help/" target="_blank" class="help"></a>
                     </div>
@@ -555,9 +555,9 @@
                     <section class="jobSearch filtroHomeResponsive">
                         <article>
                             <form action="/vagas/" method="get"  autocomplete="off" class="formFlat formBuscaVagas" id="formBuscaVagas" novalidate="novalidate" sendautocomplete="off">
-                                <label  for="cargoDesejado"  class=""  title="Digite cargo ou palavra-chave para fazer a busca." role="search"> 
+                                <label  for="cargoDesejado"  class="labelController"  title="Digite cargo ou palavra-chave para fazer a busca."> 
                                     <!--<span class="label" title="Digite Cargo ou palavra-chave para fazer a buscar"><i aria-hidden="true"> Cargo ou palavra-chave</i></span>-->
-                                    <input type="text"  name="q" id="cargoDesejado" class="cargoDesejado " data-callback="BaseForm.validation.job" data-suggestHeight="82px" value="" aria-hidden="true" placeholder="Cargo ou Palavra-Chave" autocomplete="off" />
+                                    <input type="text"  name="q" id="cargoDesejado" aria-hidden="true" class="cargoDesejado " data-callback="BaseForm.validation.job" data-suggestHeight="82px" value=""  placeholder="Cargo ou Palavra-Chave" autocomplete="off" />
                                 </label>
 
                                 <div class="filtroLocalidade multipleSelect" data-clearcallback="BaseForm.validation.clearLocality">
@@ -566,14 +566,15 @@
                                     <input type="hidden" name="estado_id[]" id="stateId" value="" />
                                     <input type="hidden" name="regiao_id[]" id="regionId" value="" />
                                     <input type="hidden" name="cidade_id[]" id="cityId" value="" />
-                                    <label for="cidadeCa" class="" title="Digite Cidade, Estado ou região para fazer a busca." role="search"> </label>
+                                    
+                                    
                                     <!--<span class="label">Cidade, estado ou região</span>-->
 
-                                    <input type="text" name="cidade" id="cidadeCa" class="cidade" data-callback="BaseForm.validation.locality" data-suggestHeight="82px" aria-hidden="true" placeholder="Cidade, estado ou região"  autocomplete="off" value="" />
-                                    
+                                    <input type="text" name="cidade" id="cidade" class="cargoDesejado" data-callback="BaseForm.validation.locality" data-suggestHeight="82px"   value="" placeholder="Cidade, estado ou região"  autocomplete="off" />
+                                    <label for="cidade" class="" title="Digite cidade, estado ou região para fazer a busca."> </label>
                                 </div>
                                 <div class="envolveBtnBuscaVagas">
-                                    <input type="submit" value="buscar" class="buttonFlat buttonAzulFlat buttonBuscarVagas" title="buscar vaga" />
+                                    <input type="submit" value="buscar" role="button" class="buttonFlat buttonAzulFlat buttonBuscarVagas" />
                                 </div>
                             </form>
                         </article>
