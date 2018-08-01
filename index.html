@@ -433,7 +433,7 @@
 
                 <div class="menuHeader" id="menuHeader">
                     <nav role="navigation">
-                        <ul role="menubar">
+                        <ul>
                             <li>
                                 <a class="" onclick="s_objectID='menu_buscar_vagas'; $.fazRequisicao(this)" aria-label="Busque as melhores vagas" id="menu_buscar_vagas"
                                     href="#">
@@ -452,12 +452,18 @@
                                     <i aria-hidden="true">Por dentro das empresas</i>
                                 </a>
                             </li>
+<<<<<<< HEAD
                             <li class="subMenuItem" role="menuitem" aria-haspopup="false">
                                 <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" aria-expanded="false" aria-label="Soluções para candidatos e dicas para o seu sucesso"
                                     id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix ">
                                     <i aria-hidden="true">Soluções para candidatos</i>
                                 </a>
                                 <ul class="subMenuServicos isDeslogado autoResizeAndOverflow" role="menubar" style="display: none;">
+=======
+                            <li class="subMenuItem" aria-haspopup="true">
+                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" aria-expanded="true" aria-label="Soluções para candidatos e dicas para o seu sucesso" id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix "><i aria-hidden="true">Soluções para candidatos</i></a>
+                                <ul class="subMenuServicos isDeslogado autoResizeAndOverflow" role="menubar">
+>>>>>>> master
                                     <li role="menuitem">
                                         <a class="" onclick="s_objectID='menu_suspenso_aviso'; $.fazRequisicao(this)" id="menu_suspenso_aviso" href="/aviso-vagas/listagem/">Aviso de vagas</a>
                                     </li>
@@ -1317,7 +1323,11 @@
                 </div>
 
                 <div class="bottomSeguranca">
+
                     <a class="groupTitle" href="#" title="#top">Segurança e Qualidade</a>
+
+                    
+
                     <ul>
                         <li>
                             <a class="hiddenText" target="_blank" title="Clique para verificar a validade dessa aplicação" href="http://www.websiteprotegido.com.br/9d73e1e78a9300b3924c7ad1c33aea5fa89b8b29">
@@ -1458,8 +1468,8 @@
 
     <script type="text/javascript" src="//static.catho.com.br/static/eb4dd218ca56bd8d3c24450e966455b2.js"></script>
 
-    <script type="text/javascript" src="//static.catho.com.br/static/bfe07d9e7f001f9bce21efc4463a3629.js"></script>
-
+    <script type="text/javascript" src="js/subMenu.js"></script>
+                                        
     <script type="text/javascript">
         //controle de site atual "b2b, b2c ou cursos" para JS
         var siteAtual = 'b2c',
