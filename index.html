@@ -420,7 +420,7 @@
 
                 <div class="menuHeader" id="menuHeader">
                     <nav role="navigation">
-                        <ul role="menubar">
+                        <ul>
                             <li>
                                 <a class="" onclick="s_objectID='menu_buscar_vagas'; $.fazRequisicao(this)" aria-label="Busque as melhores vagas" id="menu_buscar_vagas" href="#"><i aria-hidden="true">Buscar vagas</i></a>
                             </li>
@@ -430,9 +430,9 @@
                             <li>
                                 <a class="" onclick="s_objectID='menu_suspenso_por_dentro'; $.fazRequisicao(this)" aria-label="Por dentro das empresas. Descubra como é trabalhar em empresas em todo Brasil" id="menu_suspenso_por_dentro" href="#"><i aria-hidden="true">Por dentro das empresas</i></a>
                             </li>
-                            <li class="subMenuItem" role="menuitem" aria-haspopup="false">
-                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" aria-expanded="false" aria-label="Soluções para candidatos e dicas para o seu sucesso" id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix "><i aria-hidden="true">Soluções para candidatos</i></a>
-                                <ul class="subMenuServicos isDeslogado autoResizeAndOverflow" role="menubar" style="display: none;">
+                            <li class="subMenuItem" aria-haspopup="true">
+                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" aria-expanded="true" aria-label="Soluções para candidatos e dicas para o seu sucesso" id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix "><i aria-hidden="true">Soluções para candidatos</i></a>
+                                <ul class="subMenuServicos isDeslogado autoResizeAndOverflow" role="menubar">
                                     <li role="menuitem">
                                         <a class="" onclick="s_objectID='menu_suspenso_aviso'; $.fazRequisicao(this)" id="menu_suspenso_aviso" href="/aviso-vagas/listagem/">Aviso de vagas</a>
                                     </li>
@@ -1133,8 +1133,8 @@
 
     <script type="text/javascript" src="//static.catho.com.br/static/eb4dd218ca56bd8d3c24450e966455b2.js"></script>
 
-    <script type="text/javascript" src="//static.catho.com.br/static/bfe07d9e7f001f9bce21efc4463a3629.js"></script>
-
+    <script type="text/javascript" src="js/subMenu.js"></script>
+                                        
     <script type="text/javascript">
         //controle de site atual "b2b, b2c ou cursos" para JS
         var siteAtual = 'b2c',
