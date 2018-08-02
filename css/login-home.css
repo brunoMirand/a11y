@@ -995,17 +995,17 @@ input[type=submit] {
 }
 
 .loginSocial .loginSocialRede.facebook:before {
-    content: "Ã "
+    content: "à"
 }
 
 .loginSocial .loginSocialRede.linkedin:before {
-    content: "Ã¡"
+    content: "á"
 }
 
 .loginSocial .loginSocialRede.google:before,
 .loginSocial .loginSocialRede.gplus:before {
     text-indent: 4px;
-    content: "Ã£"
+    content: "ã"
 }
 
 .loginSocial.layer li,
