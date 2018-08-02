@@ -2159,15 +2159,15 @@ a:hover.iconYoutube {
     position: relative
 }
 
-.footer .title.candidatos {
+.footer .title.candidatos a {
     color: #005da4
 }
 
-.footer .title.candidatos .bar {
+.footer .title.candidatos .bar  {
     background: #005da4
 }
 
-.footer .title.empresas {
+.footer .title.empresas a{
     color: #005C45
 }
 
@@ -2175,15 +2175,15 @@ a:hover.iconYoutube {
     background: #005C45
 }
 
-.footer .title.cursos {
+.footer .title.cursos a {
     color: #d71a8e
 }
 
-.footer .title.cursos .bar {
+.footer .title.cursos .bar  {
     background: #d71a8e
 }
 
-.footer .title.catho {
+.footer .title.catho a {
     color: #000
 }
 
@@ -9662,6 +9662,11 @@ section.linksCidades h2 a {
     text-decoration: none
 }
 
+section.linksFaculdade h2 a {
+    color: #005da4;
+    text-decoration: none
+}
+
 @media (min-width:500px) {
     section.linksFaculdades {
         width: 100%;
@@ -9691,6 +9696,8 @@ section.linksCidades h2 a {
         color: #666;
         line-height: 22px
     }
+
+    
     section.linksFaculdades span {
         display: none
     }
@@ -9763,7 +9770,7 @@ section.linksCidades h2 a {
     }
 }
 
-section.linksFaculdades h2 {
+section.linksFaculdades h2 a {
     color: #005da4
 }
 
