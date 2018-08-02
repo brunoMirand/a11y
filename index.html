@@ -612,16 +612,15 @@
                 <article>
                     <section class="jobSearch filtroHomeResponsive">
                         <article>
-                            <form action="/vagas/" method="get" autocomplete="off" class="formFlat formBuscaVagas" id="formBuscaVagas" novalidate="novalidate"
+                           <form action="/vagas/" method="get" autocomplete="off" class="formFlat formBuscaVagas" id="formBuscaVagas" novalidate="novalidate"
                                 sendautocomplete="off">
                                 <label for="cargoDesejado" class="labelController" title="Digite cargo ou palavra-chave para fazer a busca.">
-                                    <!--<span class="label" title="Digite Cargo ou palavra-chave para fazer a buscar"><i aria-hidden="true"> Cargo ou palavra-chave</i></span>-->
+                                   <!-- <span class="label" title="Digite Cargo ou palavra-chave para fazer a buscar"><i aria-hidden="true"> Cargo ou palavra-chave</i></span> -->
                                     <input type="text" name="q" id="cargoDesejado" aria-hidden="true" class="cargoDesejado " data-callback="BaseForm.validation.job"
-                                        data-suggestHeight="82px" value="" placeholder="Cargo ou Palavra-Chave" autocomplete="off"
-                                    />
+                                        data-suggestHeight="82px" value="" placeholder="Cargo ou Palavra-Chave" autocomplete="off"/>
                                 </label>
 
-                                <div class="filtroLocalidade multipleSelect" data-clearcallback="BaseForm.validation.clearLocality">
+                                <!-- <div class="formFlat formBuscaVagas" data-clearcallback="BaseForm.validation.clearLocality">
                                     <input type="hidden" name="localidade" id="localidadeInicial" value="[]" />
                                     <input type="hidden" name="pais_id" id="countryId" value="31" data-clearignore="true" />
                                     <input type="hidden" name="estado_id[]" id="stateId" value="" />
@@ -629,16 +628,18 @@
                                     <input type="hidden" name="cidade_id[]" id="cityId" value="" />
 
 
-                                 <!--   <span class="label">Cidade, estado ou região</span>-->
-
+                                    <span class="label">Cidade, estado ou região</span> -->
+                                    <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para fazer a busca."> 
                                     <input type="text" name="cidade" id="cidade" class="cargoDesejado" data-callback="BaseForm.validation.locality" data-suggestHeight="82px"
                                         value="" aria-hidden="true" placeholder="Cidade, estado ou região" autocomplete="off" />
-                                    <label for="cidade" class="" aria-label="Digite cidade, estado ou região para fazer a busca."> </label>
-                                </div>
-                                <div class="envolveBtnBuscaVagas">
+                                    </label>
+                                <!--</div>
+                                <div class="envolveBtnBuscaVagas">-->
+                                    <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para fazer a busca."> 
                                     <input type="submit" value="buscar" role="button" class="buttonFlat buttonAzulFlat buttonBuscarVagas" />
-                                </div>
-                            </form>
+                                    </label>
+                           <!--     </div> -->
+                            </form> 
                         </article>
                     </section>
                 </article>
@@ -903,7 +904,7 @@
 
                 <ul class="lessContent">
                     <li>
-                        <a href="https://www.catho.com.br/vagas/sp/sao-paulo/" title="Vagas de emprego em São Paulo - SP">São Paulo</a>
+                        <a href="https://www.catho.com.br/vagas/sp/sao-paulo/" title="Vagas de emprego em São Paulo - SP"><i aria-hidden="true"> São Paulo</i></a>
                     </li>
                     <li>
                         <a href="https://www.catho.com.br/vagas/rs/porto-alegre/" title="Vagas de emprego em Porto Alegre - RS">Porto Alegre</a>

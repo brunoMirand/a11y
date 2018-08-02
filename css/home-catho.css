@@ -7676,7 +7676,7 @@ body.isTablet.openContainerCamadas.isTouchScreen.isModernDevice .containerCamada
     height: 31px;
     vertical-align: middle;
     color: #999;
-    display: block
+    display: none;
 }
 
 .localidade .inputLocalidade {
