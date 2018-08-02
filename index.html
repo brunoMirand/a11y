@@ -404,14 +404,14 @@
 
                     <div class="topRight">
 
-                        <a onclick="s_objectID='menu_ajuda'; $.fazRequisicao(this)" aria-label="Acesse o menu ajuda" id="menu_ajuda" href="https://www.catho.com.br/help/"
+                        <a onclick="s_objectID='menu_ajuda'; $.fazRequisicao(this)" aria-label="Acesse o menu de ajuda" id="menu_ajuda" href="https://www.catho.com.br/help/"
                             target="_blank" class="help"></a>
                     </div>
                     <!-- Botões de Acessibilidade -->
                 <div class="posicaoBotao">
-                        <button class="button"  title="Aumentar fonte do conteúdo." onClick="fonte('a');"> A+ </button> <!-- Botão + -->
-                        <button class="button"  title="Voltar a fonte padrão fonte do conteúdo." onClick="fonte('d');"> A </button> <!-- Botão - -->
-                        <button class="buttonContraste"  title="Mudar o contraste do conteúdo." onClick="contraste()"> &#9681; </button> <!-- Botão Contraste - -->
+                        <button class="button"  title="Aumentar fonte" onClick="fonte('a');"> <i aria-hidden="true">A+</i> </button> 
+                        <button class="button"  title="Fonte padrão" onClick="fonte('d');"><i aria-hidden="true">A</i> </button> 
+                        <button class="buttonContraste"  title="Mudar o contraste do conteúdo." onClick="contraste()"><span> &#9681; </span> </button> 
 
                 </div>
 
@@ -536,10 +536,10 @@
                 </div>
 
                 <div class="actionsEntrar">
-                    <a href="javascript:void(0);" role="button" title="Acesse para efetuar login caso já tenha cadastro." class="btnLogin" id="btnLogin">
+                    <a href="javascript:void(0);" role="button" aria-label="Acesse para efetuar login caso já tenha cadastro" class="btnLogin" id="btnLogin">
                         <i aria-hidden="true">Login</i>
                     </a>
-                    <a href="#" title="Assine a Catho e Consiga seu emprego ideal.">
+                    <a href="#" aria-label="Assine a Catho e Consiga seu emprego ideal.">
                         <i aria-hidden="true">Assine</a>
                     </i>
 
@@ -563,24 +563,24 @@
             <div class="bannerResponsive">
                 <p class="pequeno">
                     <i aria-hidden="true">Experimente por </i>
-                    <a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" title="Cadastre-se por 7 dias grátis">
+                    <a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" aria-label="Cadastre-se por 7 dias grátis">
                         <i aria-hidden="true">7 dias grátis</i>
                     </a>.</p>
                 <p class="medio">
                     <i aria-hidden="true">A gente trabalha pelo seu trabalho. Experimente por</i>
                     <a href="https://seguro.catho.com.br/cadastro-candidato"
-                        class="seteDias" title="Cadastre-se por 7 dias grátis">
+                        class="seteDias" aria-label="Cadastre-se por 7 dias grátis">
                         <i aria-hidden="true">7 dias grátis</a>
                     </i>.</p>
                 <p class="grande">
                     <i aria-hidden="true">700 pessoas por dia encontram o trabalho com a Catho. Seja uma delas. Experimente por </i>
                     <a href="https://seguro.catho.com.br/cadastro-candidato"
-                        class="seteDias" title="Cadastre-se por 7 dias grátis">
+                        class="seteDias" aria-label="Cadastre-se por 7 dias grátis">
                         <i aria-hidden="true">7 dias grátis</i>
                     </a>.</p>
 
-                <div class="dadosRedesSociais" role="menubar" id="cadastroSocial" data-socialid="300">
-                    <ul role="menuitem">
+                <div class="dadosRedesSociais" id="cadastroSocial" data-socialid="300">
+                    <ul>
                         <li>
                             <a href="#" id="btnFacebook" role="button" aria-label="Cadastre-se com o Facebook" class="facebook"></a>
                         </li>
@@ -629,11 +629,11 @@
                                     <input type="hidden" name="cidade_id[]" id="cityId" value="" />
 
 
-                                    <!--<span class="label">Cidade, estado ou região</span>-->
+                                 <!--   <span class="label">Cidade, estado ou região</span>-->
 
                                     <input type="text" name="cidade" id="cidade" class="cargoDesejado" data-callback="BaseForm.validation.locality" data-suggestHeight="82px"
-                                        value="" placeholder="Cidade, estado ou região" autocomplete="off" />
-                                    <label for="cidade" class="" title="Digite cidade, estado ou região para fazer a busca."> </label>
+                                        value="" aria-hidden="true" placeholder="Cidade, estado ou região" autocomplete="off" />
+                                    <label for="cidade" class="" aria-label="Digite cidade, estado ou região para fazer a busca."> </label>
                                 </div>
                                 <div class="envolveBtnBuscaVagas">
                                     <input type="submit" value="buscar" role="button" class="buttonFlat buttonAzulFlat buttonBuscarVagas" />
@@ -1181,7 +1181,7 @@
                             </ul>
                             <strong class="subTitle">
                                 <span class="bullet">&bull;</span>
-                                <a href="index.html" title="Promoção 7 dias grátis">Promoção 7 dias grátis</a>
+                                <a href="index.html" aria-label="Promoção 7 dias grátis">Promoção 7 dias grátis</a>
                             </strong>
                             <ul>
                                 <li>
