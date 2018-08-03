@@ -1,3 +1,4 @@
+//aumentar fonte do site
 function fonte(e) {
 	var elemento = $(".acessibilidade");
 	var fonte = parseInt(elemento.css('font-size'));
@@ -24,28 +25,41 @@ function fonte(e) {
 	}
 }
 
-function contraste(){
-	var topBar = $(".topBar, .bannerDfp");
-	var containerTopoMenu = $('.containerTopoMenu');
-	var body = $("body");
-	var link = $("a, h3, .bottomBar p");
-	var button = $(".btnLogin");
-	var subtitulo = $('h2');
-	var texto = $('.texto');
-	var textoEmpresas = $('p');	
-	var group = $('.bottomParceiros ul li span, .toggleListas span, .groupTitle b, .branco, i');
-	var footer = $('.bottomBarContainer,.navContainer,.titleFooter');
-	var content = $('.content');
+// Função mudança do contraste do site 
+var contador =0;
+	$(function contraste(){ 
+		$(".buttonContraste").click(function(){
+
+			contador++;
+
+			if ((contador % 2) == 0){
+				window.location = "index.html";
+			}else{
+				var topBar = $(".topBar, .bannerDfp");
+				var containerTopoMenu = $('.containerTopoMenu');
+				var body = $("body");
+				var link = $("a, h3, .bottomBar p");
+				var button = $(".btnLogin");
+				var subtitulo = $('h2');
+				var texto = $('.texto');
+				var textoEmpresas = $('p');	
+				var group = $('.bottomParceiros ul li span, .toggleListas span, .groupTitle b, .branco, i');
+				var footer = $('.bottomBarContainer,.navContainer,.titleFooter');
+				var content = $('.content');
 	
-	textoEmpresas.css('color',"#000");
-	group.css("color", '#fff');
-	footer.css("background", '#111');	
-	topBar.css("background",'#000');
-	texto.css("background", '#111');
-	containerTopoMenu.css("background",'#111');
-	body.css("background",'#000');
-	link.css("color",'#fff');
-	subtitulo.css("color",'#fff');
-	button.css("background",'#000');
-	content.css({'color':'#fff','background': '#111'});
-}
+				textoEmpresas.css('color',"#000");
+				group.css("color", '#fff');
+				footer.css("background", '#111');	
+				topBar.css("background",'#000');
+				texto.css("background", '#111');
+				containerTopoMenu.css("background",'#111');
+				body.css("background",'#000');
+				link.css("color",'#fff');
+				subtitulo.css("color",'#fff');
+				button.css("background",'#000');
+				content.css({'color':'#fff','background': '#111'});
+			}
+		});
+	});
+		
+
