@@ -8,13 +8,13 @@
     background-color: #005da4;
     border-color: #00468C;
     border: #005da4 solid 1px;
-    font-size: 17px;
-    width: 30px;
-    height: 30px;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
     text-transform:uppercase;
     padding: 2px;
     font-size: 15;
-    border-radius: 9px;
+    border-radius: 15px;
     outline-color: red
 }
 
@@ -22,12 +22,16 @@
     margin-top: 5px;
     background-color: #000;
     padding: 1px;
-    border: #000 solid 1px;
+    border: #fff solid 1px;
     font-size: 17px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     text-transform:uppercase;
     padding: 2px;
     font-size: 15;
-    outline-color: red
+    border-radius: 15px;
+}
+
+.buttonContraste:hover, .button:hover{
+    opacity: 0.8;
 }
