@@ -9867,8 +9867,10 @@ section.bannerDfp {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid #fff;
-    margin: 53px 0 0 -34px
+    margin: 53px 0 0 -34px;
 }
+
+
 
 body {
     background-color: #f0f0f0
