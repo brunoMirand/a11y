@@ -410,12 +410,18 @@
                     <!-- Botões de Acessibilidade -->
 
 
-                <div class="posicaoBotao">
-                        <button class="button"  title="Aumentar fonte" onClick="fonte('a');"> <i aria-hidden="true">A+</i> </button> 
-                        <button class="button"  title="Fonte padrão" onClick="fonte('d');"><i aria-hidden="true">A</i> </button> 
-                        <button class="buttonContraste"  title="Mudar o contraste do conteúdo." onClick="contraste()"><span> &#9681; </span> </button> 
+                    <div class="posicaoBotao">
+                        <button class="button" title="Aumentar fonte" onClick="fonte('a');">
+                            <i aria-hidden="true">A+</i>
+                        </button>
+                        <button class="button" title="Fonte padrão" onClick="fonte('d');">
+                            <i aria-hidden="true">A</i>
+                        </button>
+                        <button class="buttonContraste" title="Mudar o contraste do conteúdo." onClick="contraste()">
+                            <span> &#9681; </span>
+                        </button>
 
-                </div>
+                    </div>
 
                 </div>
 
@@ -457,8 +463,11 @@
                             </li>
 
 
-                         <li class="subMenuItem" aria-haspopup="true">
-                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" aria-expanded="true" aria-label="Soluções para candidatos e dicas para o seu sucesso" id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix "><i aria-hidden="true">Soluções para candidatos</i></a>
+                            <li class="subMenuItem" aria-haspopup="true">
+                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" aria-expanded="true" aria-label="Soluções para candidatos e dicas para o seu sucesso"
+                                    id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix ">
+                                    <i aria-hidden="true">Soluções para candidatos</i>
+                                </a>
                                 <ul class="subMenuServicos isDeslogado autoResizeAndOverflow" role="menubar">
 
                                     <li role="menuitem">
@@ -540,7 +549,8 @@
                 </div>
 
                 <div class="actionsEntrar">
-                    <a href="javascript:void(0);" role="button" aria-label="Acesse para efetuar login caso já tenha cadastro" class="btnLogin" id="btnLogin">
+                    <a href="javascript:void(0);" role="button" aria-label="Acesse para efetuar login caso já tenha cadastro" class="btnLogin"
+                        id="btnLogin">
                         <i aria-hidden="true">Login</i>
                     </a>
                     <a href="#" aria-label="Assine a Catho e Consiga seu emprego ideal.">
@@ -572,14 +582,12 @@
                     </a>.</p>
                 <p class="medio">
                     <i aria-hidden="true">A gente trabalha pelo seu trabalho. Experimente por</i>
-                    <a href="https://seguro.catho.com.br/cadastro-candidato"
-                        class="seteDias" aria-label="Cadastre-se por 7 dias grátis">
+                    <a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" aria-label="Cadastre-se por 7 dias grátis">
                         <i aria-hidden="true">7 dias grátis</a>
                     </i>.</p>
                 <p class="grande">
                     <i aria-hidden="true">700 pessoas por dia encontram o trabalho com a Catho. Seja uma delas. Experimente por </i>
-                    <a href="https://seguro.catho.com.br/cadastro-candidato"
-                        class="seteDias" aria-label="Cadastre-se por 7 dias grátis">
+                    <a href="https://seguro.catho.com.br/cadastro-candidato" class="seteDias" aria-label="Cadastre-se por 7 dias grátis">
                         <i aria-hidden="true">7 dias grátis</i>
                     </a>.</p>
 
@@ -616,12 +624,13 @@
                 <article>
                     <section class="jobSearch filtroHomeResponsive">
                         <article>
-                           <form action="/vagas/" method="get" autocomplete="off" class="formFlat formBuscaVagas" id="formBuscaVagas" novalidate="novalidate"
+                            <form action="/vagas/" method="get" autocomplete="off" class="formFlat formBuscaVagas" id="formBuscaVagas" novalidate="novalidate"
                                 sendautocomplete="off">
                                 <label for="cargoDesejado" class="labelController" title="Digite cargo ou palavra-chave para fazer a busca.">
-                                   <!-- <span class="label" title="Digite Cargo ou palavra-chave para fazer a buscar"><i aria-hidden="true"> Cargo ou palavra-chave</i></span> -->
+                                    <!-- <span class="label" title="Digite Cargo ou palavra-chave para fazer a buscar"><i aria-hidden="true"> Cargo ou palavra-chave</i></span> -->
                                     <input type="text" name="q" id="cargoDesejado" aria-hidden="true" class="cargoDesejado " data-callback="BaseForm.validation.job"
-                                        data-suggestHeight="82px" value="" placeholder="Cargo ou Palavra-Chave" autocomplete="off"/>
+                                        data-suggestHeight="82px" value="" placeholder="Cargo ou Palavra-Chave" autocomplete="off"
+                                    />
                                 </label>
 
                                 <!-- <div class="formFlat formBuscaVagas" data-clearcallback="BaseForm.validation.clearLocality">
@@ -633,17 +642,18 @@
 
 
                                     <span class="label">Cidade, estado ou região</span> -->
-                                    <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para fazer a busca."> 
+                                <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para fazer a busca.">
                                     <input type="text" name="cidade" id="cidade" class="cargoDesejado" data-callback="BaseForm.validation.locality" data-suggestHeight="82px"
-                                        value="" aria-hidden="true" placeholder="Cidade, estado ou região" autocomplete="off" />
-                                    </label>
+                                        value="" aria-hidden="true" placeholder="Cidade, estado ou região" autocomplete="off"
+                                    />
+                                </label>
                                 <!--</div>
                                 <div class="envolveBtnBuscaVagas">-->
-                                    <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para fazer a busca."> 
+                                <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para fazer a busca.">
                                     <input type="submit" value="buscar" role="button" class="buttonFlat buttonAzulFlat buttonBuscarVagas" />
-                                    </label>
-                           <!--     </div> -->
-                            </form> 
+                                </label>
+                                <!--     </div> -->
+                            </form>
                         </article>
                     </section>
                 </article>
@@ -903,70 +913,113 @@
 
             <section class="linksCidades">
                 <h2>
-                    <a href="https://www.catho.com.br/vagas/por-local/" title="Vagas de emprego por estado ou cidade" color="red"><i aria-hidden="true"> Encontre vagas nas maiores cidades</i></a>
+                    <a href="https://www.catho.com.br/vagas/por-local/" title="Vagas de emprego por estado ou cidade" color="red">
+                        <i aria-hidden="true"> Encontre vagas nas maiores cidades</i>
+                    </a>
                 </h2>
 
                 <ul class="lessContent">
                     <li>
-                        <a href="https://www.catho.com.br/vagas/sp/sao-paulo/" title="Vagas de emprego em São Paulo - SP"><i aria-hidden="true">São Paulo</i></a>
+                        <a href="https://www.catho.com.br/vagas/sp/sao-paulo/" title="Vagas de emprego em São Paulo - SP">
+                            <i aria-hidden="true">São Paulo</i>
+                        </a>
+
 
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/rs/porto-alegre/" title="Vagas de emprego em Porto Alegre - RS"><i aria-hidden="true">Porto Alegre</i></a>
+                        <a href="https://www.catho.com.br/vagas/rs/porto-alegre/" title="Vagas de emprego em Porto Alegre - RS">
+                            <i aria-hidden="true">Porto Alegre</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/ce/fortaleza/" title="Vagas de emprego em Fortaleza - CE"><i aria-hidden="true">Fortaleza</i></a>
+                        <a href="https://www.catho.com.br/vagas/ce/fortaleza/" title="Vagas de emprego em Fortaleza - CE">
+                            <i aria-hidden="true">Fortaleza</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/pr/londrina/" title="Vagas de emprego em Londrina - PR"><i aria-hidden="true">Londrina</i></a>
+                        <a href="https://www.catho.com.br/vagas/pr/londrina/" title="Vagas de emprego em Londrina - PR">
+                            <i aria-hidden="true">Londrina</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/mg/uberlandia/" title="Vagas de emprego em Uberlândia - MG"><i aria-hidden="true">Uberlândia</i></a>
+                        <a href="https://www.catho.com.br/vagas/mg/uberlandia/" title="Vagas de emprego em Uberlândia - MG">
+                            <i aria-hidden="true">Uberlândia</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/rj/rio-de-janeiro/" title="Vagas de emprego no Rio de Janeiro - RJ"><i aria-hidden="true">Rio de Janeiro</i></a>
+                        <a href="https://www.catho.com.br/vagas/rj/rio-de-janeiro/" title="Vagas de emprego no Rio de Janeiro - RJ">
+                            <i aria-hidden="true">Rio de Janeiro</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/sp/campinas/" title="Vagas de emprego em Campinas - SP"><i aria-hidden="true">Campinas</i></a>
+                        <a href="https://www.catho.com.br/vagas/sp/campinas/" title="Vagas de emprego em Campinas - SP">
+                            <i aria-hidden="true">Campinas</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/sp/sorocaba/" title="Vagas de emprego em Sorocaba - SP"><i aria-hidden="true">Sorocaba</i></a>
+                        <a href="https://www.catho.com.br/vagas/sp/sorocaba/" title="Vagas de emprego em Sorocaba - SP">
+                            <i aria-hidden="true">Sorocaba</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/sc/florianopolis/" title="Vagas de emprego em Florianópolis - SC"><i aria-hidden="true">Florianópolis</i></a>
+                        <a href="https://www.catho.com.br/vagas/sc/florianopolis/" title="Vagas de emprego em Florianópolis - SC">
+                            <i aria-hidden="true">Florianópolis</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/pr/maringa/" title="Vagas de emprego em Maringá"><i aria-hidden="true">Maringá</i></a>
+                        <a href="https://www.catho.com.br/vagas/pr/maringa/" title="Vagas de emprego em Maringá">
+                            <i aria-hidden="true">Maringá</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/pr/curitiba/" title="Vagas de emprego em Curitiba - PR"><i aria-hidden="true">Curitiba</i></a>
+                        <a href="https://www.catho.com.br/vagas/pr/curitiba/" title="Vagas de emprego em Curitiba - PR">
+                            <i aria-hidden="true">Curitiba</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/go/goiania/" title="Vagas de emprego em Goiânia - GO"><i aria-hidden="true">Goiânia</i></a>
+                        <a href="https://www.catho.com.br/vagas/go/goiania/" title="Vagas de emprego em Goiânia - GO">
+                            <i aria-hidden="true">Goiânia</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/am/manaus/" title="Vagas de emprego em Manaus - AM"><i aria-hidden="true">Manaus</i></a>
+                        <a href="https://www.catho.com.br/vagas/am/manaus/" title="Vagas de emprego em Manaus - AM">
+                            <i aria-hidden="true">Manaus</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/sc/joinville/" title="Vagas de emprego em Joinville - SC"><i aria-hidden="true">Joinville</i></a>
+                        <a href="https://www.catho.com.br/vagas/sc/joinville/" title="Vagas de emprego em Joinville - SC">
+                            <i aria-hidden="true">Joinville</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/mt/cuiaba/" title="Vagas de emprego em Cuiabá - MT"><i aria-hidden="true">Cuiabá</i></a>
+                        <a href="https://www.catho.com.br/vagas/mt/cuiaba/" title="Vagas de emprego em Cuiabá - MT">
+                            <i aria-hidden="true">Cuiabá</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/mg/belo-horizonte/" title="Vagas de emprego em Belo Horizonte - MG"><i aria-hidden="true">Belo Horizonte</i></a>
+                        <a href="https://www.catho.com.br/vagas/mg/belo-horizonte/" title="Vagas de emprego em Belo Horizonte - MG">
+                            <i aria-hidden="true">Belo Horizonte</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/ba/salvador/" title="Vagas de emprego em Salvador - BA"><i aria-hidden="true">Salvador</i></a>
+                        <a href="https://www.catho.com.br/vagas/ba/salvador/" title="Vagas de emprego em Salvador - BA">
+                            <i aria-hidden="true">Salvador</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/ms/campo-grande/" title="Vagas de emprego em Campo Grande - MS"><i aria-hidden="true">Campo Grande</i></a>
+                        <a href="https://www.catho.com.br/vagas/ms/campo-grande/" title="Vagas de emprego em Campo Grande - MS">
+                            <i aria-hidden="true">Campo Grande</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/sp/ribeirao-preto/" title="Vagas de emprego em Ribeirão Preto - SP"><i aria-hidden="true">Ribeirão Preto</i></a>
+                        <a href="https://www.catho.com.br/vagas/sp/ribeirao-preto/" title="Vagas de emprego em Ribeirão Preto - SP">
+                            <i aria-hidden="true">Ribeirão Preto</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/vagas/sp/barueri/" title="Vagas de emprego em Barueri - SP"><i aria-hidden="true">Barueri</i></a>
+                        <a href="https://www.catho.com.br/vagas/sp/barueri/" title="Vagas de emprego em Barueri - SP">
+                            <i aria-hidden="true">Barueri</i>
+                        </a>
                     </li>
                 </ul>
 
@@ -976,72 +1029,111 @@
 
             <section class="linksFaculdades">
                 <h2>
-                    <a href="index.html" title="Faculdades mais buscadas"><i aria-hidden="true">Faculdades mais buscadas</i></a>
+                    <a href="index.html" title="Faculdades mais buscadas">
+                        <i aria-hidden="true">Faculdades mais buscadas</i>
+                    </a>
                 </h2>
 
                 <ul class="lessContent">
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/universidade-estacio/cursos" title="Estácio"><i aria-hidden="true">Estácio</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/universidade-estacio/cursos" title="Estácio">
+                            <i aria-hidden="true">Estácio</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/fce-faculdade-campos-eliseos/cursos" title="FCE - Faculdade Campos Eliseos"><i aria-hidden="true">FCE</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/fce-faculdade-campos-eliseos/cursos" title="FCE - Faculdade Campos Eliseos">
+                            <i aria-hidden="true">FCE</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/senac/cursos" title="Senac">Senac</a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/senac/cursos" title="Senac">
+                            <i aria-hidden="true">Senac</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/uva-universidade-veiga-de-almeida/cursos" title="UVA - Veiga de Almeida"><i aria-hidden="true">UVA - Veiga de Almeida</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/uva-universidade-veiga-de-almeida/cursos" title="UVA - Veiga de Almeida">
+                            <i aria-hidden="true">UVA - Veiga de Almeida</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/faculdade-unyleya/cursos" title="Faculdade Unyleya"><i aria-hidden="true">Unyleya</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/faculdade-unyleya/cursos" title="Faculdade Unyleya">
+                            <i aria-hidden="true">Unyleya</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/unp-universidade-potiguar/cursos" title="UNP - Universidade Potiguar"><i aria-hidden="true">Universidade Potiguar</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/unp-universidade-potiguar/cursos" title="UNP - Universidade Potiguar">
+                            <i aria-hidden="true">Universidade Potiguar</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/fmu-faculdades-metropolitanas-unidas/cursos"
-                            title="FMU - Centro Universitário das Faculdades Metropolitanas Unidas"><i aria-hidden="true">FMU</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/fmu-faculdades-metropolitanas-unidas/cursos" title="FMU - Centro Universitário das Faculdades Metropolitanas Unidas">
+                            <i aria-hidden="true">FMU</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/unicid-universidade-cidade-de-sao-paulo/cursos"
-                            title="UNICID - Universidade Cidade de São Paulo"><i aria-hidden="true">UNICID</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/unicid-universidade-cidade-de-sao-paulo/cursos" title="UNICID - Universidade Cidade de São Paulo">
+                            <i aria-hidden="true">UNICID</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/udf-centro-universitario-do-distrito-federal/cursos"
-                            title="UDF - Centro Universitário do Distrito Federal"><i aria-hidden="true">UDF</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/udf-centro-universitario-do-distrito-federal/cursos" title="UDF - Centro Universitário do Distrito Federal">
+                            <i aria-hidden="true">UDF</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/unopar-universidade-norte-do-parana/cursos" title="UNOPAR - Universidade Norte do Paraná"><i aria-hidden="true">UNOPAR</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/unopar-universidade-norte-do-parana/cursos" title="UNOPAR - Universidade Norte do Paraná">
+                            <i aria-hidden="true">UNOPAR</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/ucam-universidade-candido-mendes/cursos" title="UCAM - Universidade Cândido Mendes"><i aria-hidden="true">UCAM</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/ucam-universidade-candido-mendes/cursos" title="UCAM - Universidade Cândido Mendes">
+                            <i aria-hidden="true">UCAM</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/devry-or-fbv/cursos" title="Devry FBV"><i aria-hidden="true">Devry FBV</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/devry-or-fbv/cursos" title="Devry FBV">
+                            <i aria-hidden="true">Devry FBV</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/fael-faculdade-educacional-da-lapa/cursos" title="FAEL - Faculdade Educacional da Lapa"><i aria-hidden="true">FAEL</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/fael-faculdade-educacional-da-lapa/cursos" title="FAEL - Faculdade Educacional da Lapa">
+                            <i aria-hidden="true">FAEL</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/unicesumar/cursos" title="UNICESUMAR - Centro Universitário de Maringá"><i aria-hidden="true">UNICESUMAR</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/unicesumar/cursos" title="UNICESUMAR - Centro Universitário de Maringá">
+                            <i aria-hidden="true">UNICESUMAR</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/uninassau/cursos" title="UNINASSAU">UNINASSAU</a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/uninassau/cursos" title="UNINASSAU">
+                            <i aria-hidden="true">UNINASSAU</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/unifran-universidade-de-franca/cursos" title="UNIFRAN - Universidade de Franca"><i aria-hidden="true">UNIFRAN</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/unifran-universidade-de-franca/cursos" title="UNIFRAN - Universidade de Franca">
+                            <i aria-hidden="true">UNIFRAN</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/unicsul-cruzeiro-do-sul/cursos" title="UNICSUL - Universidade Cruzeiro do Sul"><i aria-hidden="true">UNICSUL</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/unicsul-cruzeiro-do-sul/cursos" title="UNICSUL - Universidade Cruzeiro do Sul">
+                            <i aria-hidden="true">UNICSUL</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/unifacs/cursos" title="UNIFACS - Universidade Salvador"><i aria-hidden="true">UNIFACS</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/unifacs/cursos" title="UNIFACS - Universidade Salvador">
+                            <i aria-hidden="true">UNIFACS</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/unip-universidade-paulista/cursos" title="UNIP - Universidade Paulista"><i aria-hidden="true">UNIP</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/unip-universidade-paulista/cursos" title="UNIP - Universidade Paulista">
+                            <i aria-hidden="true">UNIP</i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.catho.com.br/educacao/instituicoes/uninove-universidade-nove-de-julho/cursos" title="UNINOVE - Universidade Nove de Julho"><i aria-hidden="true">UNINOVE</i></a>
+                        <a href="https://www.catho.com.br/educacao/instituicoes/uninove-universidade-nove-de-julho/cursos" title="UNINOVE - Universidade Nove de Julho">
+                            <i aria-hidden="true">UNINOVE</i>
+                        </a>
                     </li>
                 </ul>
 
@@ -1063,87 +1155,124 @@
                     <strong class="title candidatos">
                         <span class="bar"></span>
                         <span>
-                            <a class="titleFooter" href="index.html" title="Candidatos">Candidatos</a>
+
+
+                            <a href="index.html" title="Candidatos">
+                                <i aria-hidden="true">Candidatos</i>
+                            </a>
+
                         </span>
                     </strong>
                     <ul class="navLista clearfix   uInativo  ">
                         <li class=" group buscarV">
                             <strong class="subTitle">
                                 <span class="bullet">&bull;</span>
-                                <a href="index.html" title="Busca vagas">Buscar Vagas</a>
+                                <a href="index.html" title="Busca vagas">
+                                    <i aria-hidden="true">Buscar Vagas</i>
+                                </a>
                             </strong>
                             <ul>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_palavra_chave'; $.fazRequisicao(this)" id="rdp_palavra_chave" class="" href="/vagas/"
-                                        title="Por palavra-chave">Por palavra-chave</a>
+                                        title="Por palavra-chave">
+                                        <i aria-hidden="true">Por palavra-chave</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_area_cargo'; $.fazRequisicao(this)" id="rdp_area_cargo" class="" href="https://www.catho.com.br/vagas/por-area/"
-                                        title="Por área / cargo">Por área / cargo</a>
+                                        title="Por área / cargo">
+                                        <i aria-hidden="true">Por área / cargo</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_por_estado'; $.fazRequisicao(this)" id="rdp_por_estado" class="" href="https://www.catho.com.br/vagas/por-local/"
-                                        title="Por estado">Por estado</a>
+                                        title="Por estado">
+                                        <i aria-hidden="true">Por estado</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_melhores_empresas'; $.fazRequisicao(this)" id="rdp_melhores_empresas" class=""
-                                        href="https://www3.catho.com.br/vag/empregos-maiores-empresas/" title="Melhores e Maiores Empresas do Brasil">Melhores e Maiores Empresas do Brasil</a>
+                                        href="https://www3.catho.com.br/vag/empregos-maiores-empresas/" title="Melhores e Maiores Empresas do Brasil">
+                                        <i aria-hidden="true">Melhores e Maiores Empresas do Brasil</i>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
                         <li class=" group produtosG">
                             <strong class="subTitle">
                                 <span class="bullet">&bull;</span>
-                                <a href="index.html" title="Produtos Gratuitos"> Produtos Gratuitos</a>
+                                <a href="index.html" title="Produtos Gratuitos">
+                                    <i aria-hidden="true">Produtos Gratuitos</i>
+                                </a>
                             </strong>
                             <ul>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_produtos_gratuitos'; $.fazRequisicao(this)" id="rdp_produtos_gratuitos" class=""
-                                        href="/aviso-vagas/listagem/" title="Aviso de vagas e busca salvas">Aviso de vagas e busca salvas</a>
+                                        href="/aviso-vagas/listagem/" title="Aviso de vagas e busca salvas">
+                                        <i aria-hidden="true">Aviso de vagas e busca salvas</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_busca_vagas'; $.fazRequisicao(this)" id="rdp_busca_vagas" class="" href="https://www.catho.com.br/vagas/"
-                                        title="Buscar vagas">Buscar vagas</a>
+                                        title="Buscar vagas">
+                                        <i aria-hidden="true">Buscar vagas</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_pesquisa_pf'; $.fazRequisicao(this)" id="rdp_pesquisa_pf" class="" href="/profissoes/"
-                                        title="Guia de Profissões e Salários">Guia de Profissões e Salários</a>
+                                        title="Guia de Profissões e Salários">
+                                        <i aria-hidden="true">Guia de Profissões e Salários</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_por_dentro_pf'; $.fazRequisicao(this)" id="rdp_por_dentro_pf" class="" href="/por-dentro/"
-                                        title="Por dentro das empresas">Por dentro das empresas</a>
+                                        title="Por dentro das empresas">
+                                        <i aria-hidden="true">Por dentro das empresas</i>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
                         <li class=" group apoioC">
                             <strong class="subTitle">
                                 <span class="bullet">&bull;</span>
-                                <a href="index.html" title="Apoio ao Candidato">Apoio ao Candidato</a>
+                                <a href="index.html" title="Apoio ao Candidato">
+                                    <i aria-hidden="true">Apoio ao Candidato</i>
+                                </a>
                             </strong>
                             <ul>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_elaboracao_curriculo'; $.fazRequisicao(this)" id="rdp_elaboracao_curriculo" class=""
                                         href="https://parceiros.catho.com.br/gop.php?origem=cat&amp;a=6515&amp;p=12&amp;url1=1&amp;url=servicoscatho%2Fcarreira%2Felaboracao-de-curriculo%2F"
-                                        title="Elaboração de Currículo">Elaboração de Currículo</a>
+                                        title="Elaboração de Currículo">
+                                        <i aria-hidden="true">Elaboração de Currículo</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_analise_curriculo'; $.fazRequisicao(this)" id="rdp_analise_curriculo" class=""
                                         href="https://parceiros.catho.com.br/gop.php?origem=cat&amp;a=6523&amp;p=4&amp;url1=1&amp;url=servicoscatho%2Fcarreira%2Fanalise-de-curriculo%2F"
-                                        title="Análise de Currículo">Análise de Currículo</a>
+                                        title="Análise de Currículo">
+                                        <i aria-hidden="true">Análise de Currículo</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_simulacao_entrevista'; $.fazRequisicao(this)" id="rdp_simulacao_entrevista" class=""
                                         href="https://parceiros.catho.com.br/gop.php?origem=cat&amp;a=6527&amp;p=16&amp;url1=1&amp;url=servicoscatho%2Fcarreira%2Fsimulacao-de-entrevista%2F"
-                                        title="Simulação de Entrevista">Simulação de Entrevista</a>
+                                        title="Simulação de Entrevista">
+                                        <i aria-hidden="true">Simulação de Entrevista</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_carta_apresentacao'; $.fazRequisicao(this)" id="rdp_carta_apresentacao" class=""
                                         href="https://parceiros.catho.com.br/gop.php?origem=cat&amp;a=6519&amp;p=13&amp;url1=1&amp;url=servicoscatho%2Fcarreira%2Fcarta-de-apresentacao%2F"
-                                        title="Elaboração de Carta de Apresentação">Elaboração de Carta de Apresentação</a>
+                                        title="Elaboração de Carta de Apresentação">
+                                        <i aria-hidden="true">Elaboração de Carta de Apresentação</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_todos_produtos'; $.fazRequisicao(this)" id="rdp_todos_produtos" class="" href="/servicoscandidatos/"
-                                        title="Conheça Todas as Soluções">Conheça Todas as Soluções</a>
+                                        title="Conheça Todas as Soluções">
+                                        <i aria-hidden="true">Conheça Todas as Soluções</i>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -1151,49 +1280,67 @@
                             <strong class="subTitle">
                                 <span class="bullet">&bull;</span>
                                 <a target="_self" onclick="s_objectID='rdp_carreira_sucesso'; $.fazRequisicao(this)" id="rdp_carreira_sucesso" class="" href="https://www.catho.com.br/carreira-sucesso/"
-                                    title="Carreira e Sucesso">Carreira e Sucesso</a>
+                                    title="Carreira e Sucesso">
+                                    <i aria-hidden="true">Carreira e Sucesso</i>
+                                </a>
                             </strong>
                         </li>
                         <li class=" group exclusivoA">
                             <strong class="subTitle">
                                 <span class="bullet">&bull;</span>
-                                <a href="index.html" title="Exclusivos para Assinantes">Exclusivos para Assinantes</a>
+                                <a href="index.html" title="Exclusivos para Assinantes">
+                                    <i aria-hidden="true">Exclusivos para Assinantes</i>
+                                </a>
                             </strong>
                             <ul>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_cursos_online'; $.fazRequisicao(this)" id="rdp_cursos_online" class="" href="/cursos-rapidos/"
-                                        title="Cursos Rápidos">Cursos Rápidos</a>
+                                        title="Cursos Rápidos">
+                                        <i aria-hidden="true">Cursos Rápidos</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_cadastro_catho'; $.fazRequisicao(this)" id="rdp_cadastro_catho" class="" href="https://cadastro.catho.com.br/"
-                                        title="Cadastro Catho">Cadastro Catho</a>
+                                        title="Cadastro Catho">
+                                        <i aria-hidden="true">Cadastro Catho</i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_consultor_virtual'; $.fazRequisicao(this)" id="rdp_consultor_virtual" class=""
-                                        href="/consvirtual/" title="Consultor Virtual">Consultor Virtual</a>
+                                        href="/consvirtual/" title="Consultor Virtual">
+                                        <i aria-hidden="true">Consultor Virtual</i>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="group mapaSite">
                             <strong class="subTitle">
                                 <span class="bullet">&bull;</span title="Ajuda">
-                                <a href="index.html" title="Ajuda">Ajuda</a>
+                                <a href="index.html" title="Ajuda">
+                                    <i aria-hidden="true">Ajuda</i>
+                                </a>
                             </strong>
                             <ul>
                                 <li>
                                     <a target="_self" onclick="s_objectID='rdp_central_relacionamento'; $.fazRequisicao(this)" id="rdp_central_relacionamento"
-                                        class="" href="https://www.catho.com.br/sac/" title="Central de Relacionamento">Central de Relacionamento</a>
+                                        class="" href="https://www.catho.com.br/sac/" title="Central de Relacionamento">
+                                        <i aria-hidden="true">Central de Relacionamento</i>
+                                    </a>
                                 </li>
                             </ul>
                             <strong class="subTitle">
                                 <span class="bullet">&bull;</span>
-                                <a href="index.html" aria-label="Promoção 7 dias grátis">Promoção 7 dias grátis</a>
+                                <a href="index.html" aria-label="Promoção 7 dias grátis">
+                                    <i aria-hidden="true">Promoção 7 dias grátis</i>
+                                </a>
                             </strong>
                             <ul>
                                 <li>
                                     <a target="" onclick="s_objectID='rdp_enstenda_promocao'; $.fazRequisicao(this)" id="rdp_enstenda_promocao" class="colorbox"
                                         href="https://www.catho.com.br/help/usr/faq_promocao.phtml?home=1&amp;width=650px&amp;height=600px&amp;iframe=true&td=Nw=="
-                                        title="Entenda a Promoção 7 Dias Grátis">Entenda a promoção</a>
+                                        title="Entenda a Promoção 7 Dias Grátis">
+                                        <i aria-hidden="true">Entenda a promoção</i>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -1205,23 +1352,32 @@
                         <strong class="title empresas">
                             <span class="bar"></span>
                             <span>
-                                <a class="titleFooter" href="index.html" title="Empresa">Empresa</a>
+
+
+                                <a href="index.html" title="Empresa">
+                                    <i aria-hidden="true">Empresa</i>
+                                </a>
                             </span>
 
                         </strong>
                         <ul class="navLista2">
                             <li>
-                                <a target="_self" onclick="s_objectID='rdp_anuncio_vagas'; $.fazRequisicao(this)" id="rdp_anuncio_vagas"
-                                    class="" href="https://seguro.catho.com.br/inc/novaInclusao/FormPrincipal.php?tipoProd=Vag&amp;c=13006"
-                                    title="Solução Atração dos Melhores">Solução Atração dos Melhores</a>
+                                <a target="_self" onclick="s_objectID='rdp_anuncio_vagas'; $.fazRequisicao(this)" id="rdp_anuncio_vagas" class="" href="https://seguro.catho.com.br/inc/novaInclusao/FormPrincipal.php?tipoProd=Vag&amp;c=13006"
+                                    title="Solução Atração dos Melhores">
+                                    <i aria-hidden="true">Solução Atração dos Melhores</i>
+                                </a>
                             </li>
                             <li>
-                                <a target="_self" onclick="s_objectID='rdp_busca_curriculo'; $.fazRequisicao(this)" id="rdp_busca_curriculo"
-                                    class="" href="https://www.catho.com.br/empresas/produtos/" title="Solução Recrutamento Perfeito">Solução Recrutamento Perfeito</a>
+                                <a target="_self" onclick="s_objectID='rdp_busca_curriculo'; $.fazRequisicao(this)" id="rdp_busca_curriculo" class="" href="https://www.catho.com.br/empresas/produtos/"
+                                    title="Solução Recrutamento Perfeito">
+                                    <i aria-hidden="true">Solução Recrutamento Perfeito</i>
+                                </a>
                             </li>
                             <li>
-                                <a target="_self" onclick="s_objectID='rdp_produtos_empresa'; $.fazRequisicao(this)" id="rdp_produtos_empresa"
-                                    class="" href="https://www.catho.com.br/empresas/produtos/" title="Produtos para Empresa">Produtos para Empresa</a>
+                                <a target="_self" onclick="s_objectID='rdp_produtos_empresa'; $.fazRequisicao(this)" id="rdp_produtos_empresa" class="" href="https://www.catho.com.br/empresas/produtos/"
+                                    title="Produtos para Empresa">
+                                    <i aria-hidden="true">Produtos para Empresa</i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -1229,13 +1385,20 @@
                         <strong class="title cursos">
                             <span class="bar"></span>
                             <span>
-                                <a class="titleFooter" href="index.html" title="Cursos">Cursos</a>
+                                <<<<<<< HEAD <a class="titleFooter" href="index.html" title="Cursos">Cursos</a>
+                                    =======
+                                    <a href="index.html" title="Cursos">
+                                        <i aria-hidden="true">Cursos</i>
+                                    </a>
+                                    >>>>>>> developLucas
                             </span>
                         </strong>
                         <ul class="navLista3">
                             <li>
-                                <a target="_self" onclick="s_objectID='rdp_buscar_cursos'; $.fazRequisicao(this)" id="rdp_buscar_cursos"
-                                    class="" href="https://www.catho.com.br/educacao/" title="Buscar cursos">Buscar cursos</a>
+                                <a target="_self" onclick="s_objectID='rdp_buscar_cursos'; $.fazRequisicao(this)" id="rdp_buscar_cursos" class="" href="https://www.catho.com.br/educacao/"
+                                    title="Buscar cursos">
+                                    <i aria-hidden="true">Buscar cursos</i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -1245,57 +1408,84 @@
                     <strong class="title catho">
                         <span class="bar"></span>
                         <span>
-                            <a class="titleFooter" href="index.html" title="Institucional">Institucional</a>
+                            <<<<<<< HEAD <a class="titleFooter" href="index.html" title="Institucional">Institucional</a>
+                                =======
+                                <a href="index.html" title="Institucional">
+                                    <i aria-hidden="true">Institucional</i>
+                                </a>
+                                >>>>>>> developLucas
                         </span>
                     </strong>
                     <ul class="navLista4">
                         <li class="">
-                            <a target="_self" onclick="s_objectID='sobre_empresa_rodape'; $.fazRequisicao(this)" id="sobre_empresa_rodape"
-                                class="" href="https://www.catho.com.br/institucional/" title="Sobre a Catho">Sobre a Catho</a>
+                            <a target="_self" onclick="s_objectID='sobre_empresa_rodape'; $.fazRequisicao(this)" id="sobre_empresa_rodape" class="" href="https://www.catho.com.br/institucional/"
+                                title="Sobre a Catho">
+                                <i aria-hidden="true">Sobre a Catho</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_blank" onclick="s_objectID='catho_blog_rodape'; $.fazRequisicao(this)" id="catho_blog_rodape"
-                                class="" href="http://blog.catho.com.br/" title="Blog Catho">Blog Catho</a>
+                            <a target="_blank" onclick="s_objectID='catho_blog_rodape'; $.fazRequisicao(this)" id="catho_blog_rodape" class="" href="http://blog.catho.com.br/"
+                                title="Blog Catho">
+                                <i aria-hidden="true">Blog Catho</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_self" onclick="s_objectID='catho_imprensa_rodape'; $.fazRequisicao(this)" id="catho_imprensa_rodape"
-                                class="" href="https://www.catho.com.br/institucional/category/imprensa/" title="Catho na Imprensa">Catho na Imprensa</a>
+                            <a target="_self" onclick="s_objectID='catho_imprensa_rodape'; $.fazRequisicao(this)" id="catho_imprensa_rodape" class=""
+                                href="https://www.catho.com.br/institucional/category/imprensa/" title="Catho na Imprensa">
+                                <i aria-hidden="true">Catho na Imprensa</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_blank" onclick="s_objectID='nosso_numeros_rodape'; $.fazRequisicao(this)" id="nosso_numeros_rodape"
-                                class="colorbox" href="https://www.catho.com.br/home2009/lib/templates/numerosSite.php?width=700px&amp;height=500px&amp;iframe=true"
-                                title="Entenda nossos números">Entenda nossos números</a>
+                            <a target="_blank" onclick="s_objectID='nosso_numeros_rodape'; $.fazRequisicao(this)" id="nosso_numeros_rodape" class="colorbox"
+                                href="https://www.catho.com.br/home2009/lib/templates/numerosSite.php?width=700px&amp;height=500px&amp;iframe=true"
+                                title="Entenda nossos números">
+                                <i aria-hidden="true">Entenda nossos números</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_blank" onclick="s_objectID='nosso_contratos_rodape'; $.fazRequisicao(this)" id="nosso_contratos_rodape"
-                                class="colorbox" href="https://www.catho.com.br/home2009/lib/templates/layer-contrato.php?width=700px&amp;height=350px&amp;iframe=true&amp;siteNovoIframe=1"
-                                title="Nossos contratos">Nossos contratos</a>
+                            <a target="_blank" onclick="s_objectID='nosso_contratos_rodape'; $.fazRequisicao(this)" id="nosso_contratos_rodape" class="colorbox"
+                                href="https://www.catho.com.br/home2009/lib/templates/layer-contrato.php?width=700px&amp;height=350px&amp;iframe=true&amp;siteNovoIframe=1"
+                                title="Nossos contratos">
+                                <i aria-hidden="true">Nossos contratos</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_blank" onclick="s_objectID='trabalhe_catho_rodape'; $.fazRequisicao(this)" id="trabalhe_catho_rodape"
-                                class="" href="https://www.catho.com.br/empregos/catho_online" title="Trabalhe na Catho">Trabalhe na Catho</a>
+                            <a target="_blank" onclick="s_objectID='trabalhe_catho_rodape'; $.fazRequisicao(this)" id="trabalhe_catho_rodape" class=""
+                                href="https://www.catho.com.br/empregos/catho_online" title="Trabalhe na Catho">
+                                <i aria-hidden="true">Trabalhe na Catho</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_blank" onclick="s_objectID='publicidade_catho_rodape'; $.fazRequisicao(this)" id="publicidade_catho_rodape"
-                                class="" href="https://www.catho.com.br/publicidade/" title="Publicidade na Catho">Publicidade na Catho</a>
+                            <a target="_blank" onclick="s_objectID='publicidade_catho_rodape'; $.fazRequisicao(this)" id="publicidade_catho_rodape" class=""
+                                href="https://www.catho.com.br/publicidade/" title="Publicidade na Catho">
+                                <i aria-hidden="true">Publicidade na Catho</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_blank" onclick="s_objectID='indique_catho_rodape'; $.fazRequisicao(this)" id="indique_catho_rodape"
-                                class="colorbox" href="https://www.catho.com.br/7dias/indique.php?home=1?width=700px&amp;height=500px%&amp;iframe=true"
-                                title="Indique a Catho">Indique a Catho</a>
+                            <a target="_blank" onclick="s_objectID='indique_catho_rodape'; $.fazRequisicao(this)" id="indique_catho_rodape" class="colorbox"
+                                href="https://www.catho.com.br/7dias/indique.php?home=1?width=700px&amp;height=500px%&amp;iframe=true"
+                                title="Indique a Catho">
+                                <i aria-hidden="true">Indique a Catho</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_blank" onclick="s_objectID='opine_sobre_catho_rodape'; $.fazRequisicao(this)" id="opine_sobre_catho_rodape"
-                                class="colorbox" href="https://www.catho.com.br/home2009/layer-opine.php?width=600px&amp;height=350px&amp;iframe=true&amp;url=/"
-                                title="Opine sobre esta página">Opine sobre esta página</a>
+                            <a target="_blank" onclick="s_objectID='opine_sobre_catho_rodape'; $.fazRequisicao(this)" id="opine_sobre_catho_rodape" class="colorbox"
+                                href="https://www.catho.com.br/home2009/layer-opine.php?width=600px&amp;height=350px&amp;iframe=true&amp;url=/"
+                                title="Opine sobre esta página">
+                                <i aria-hidden="true">Opine sobre esta página</i>
+                            </a>
                         </li>
                         <li class="">
-                            <a target="_self" onclick="s_objectID='mapa_site_rodape'; $.fazRequisicao(this)" id="mapa_site_rodape"
-                                class="" href="https://www.catho.com.br/mapa/" title="Mapa do Site">Mapa do Site</a>
+                            <a target="_self" onclick="s_objectID='mapa_site_rodape'; $.fazRequisicao(this)" id="mapa_site_rodape" class="" href="https://www.catho.com.br/mapa/"
+                                title="Mapa do Site">
+                                <i aria-hidden="true">Mapa do Site</i>
+                            </a>
                         </li>
                         <li class="cathoFipe">
-                            <a target="_self" onclick="s_objectID='catho_fipe'; $.fazRequisicao(this)" id="catho_fipe" class=""
-                                href="https://www.catho.com.br/catho-fipe/" title="Indicadores do Mercado de Trabalho Catho-Fipe">Indicadores do Mercado de Trabalho Catho-Fipe</a>
+                            <a target="_self" onclick="s_objectID='catho_fipe'; $.fazRequisicao(this)" id="catho_fipe" class="" href="https://www.catho.com.br/catho-fipe/"
+                                title="Indicadores do Mercado de Trabalho Catho-Fipe">
+                                <i aria-hidden="true">Indicadores do Mercado de Trabalho Catho-Fipe</i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1309,23 +1499,31 @@
                     </strong>
                     <ul>
                         <li>
-                            <a class="seloIbest hiddenText" href="#" title="Premio Ibest">Prêmio iBest</a>
+                            <a class="seloIbest hiddenText" href="#" title="Premio Ibest">
+                                <i aria-hidden="true">Prêmio iBest</i>
+                            </a>
                         </li>
                         <li>
-                            <a class="seloSecurityLeaders hiddenText" href="#" title="Prêmio CorpoCatho Online Ltda. CNPJ: 03.753.088/0001-00 Alameda Juari, 262 - Barueri, SP - 06460-090 Política de Privacidaderativo 2010 - Empresa de educação a distância (e-learning) e site para recrutamento">Prêmio Corporativo 2010 - Empresa de educação a distância (e-learning) e site para recrutamento</a>
+                            <a class="seloSecurityLeaders hiddenText" href="#" title="Prêmio CorpoCatho Online Ltda. CNPJ: 03.753.088/0001-00 Alameda Juari, 262 - Barueri, SP - 06460-090 Política de Privacidaderativo 2010 - Empresa de educação a distância (e-learning) e site para recrutamento">
+                                <i aria-hidden="true">Prêmio Corporativo 2010 - Empresa de educação a distância (e-learning) e site para recrutamento</i>
+                            </a>
                         </li>
 
                         <li>
-                            <a class="seloPremioCorporativo hiddenText" href="#" title="Prêmio Security Leaders 2010 na categoria de RH">Prêmio Security Leaders 2010 na categoria de RH</a>
+                            <a class="seloPremioCorporativo hiddenText" href="#" title="Prêmio Security Leaders 2010 na categoria de RH">
+                                <i aria-hidden="true">Prêmio Security Leaders 2010 na categoria de RH</i>
+                            </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="bottomSeguranca">
 
-                    <a class="groupTitle" href="#" title="#top">Segurança e Qualidade</a>
+                    <a class="groupTitle" href="#" title="#top">
+                        <i aria-hidden="true">Segurança e Qualidade</i>
+                    </a>
 
-                    
+
 
                     <ul>
                         <li>
@@ -1335,41 +1533,59 @@
                             </a>
                         </li>
                         <li>
-                            <a class="seloVerisign hiddenText" title="VeriSign" href="#">VeriSign</a>
+                            <a class="seloVerisign hiddenText" title="VeriSign" href="#">
+                                <i aria-hidden="true">VeriSign</i>
+                            </a>
                         </li>
                         <li>
-                            <a class="seloCertisign hiddenText" title="Certisign" href="#">Certisign</a>
+                            <a class="seloCertisign hiddenText" title="Certisign" href="#">
+                                <i aria-hidden="true">Certisign</i>
+                            </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="boxMidiasParcerias">
 
-                    <a class="groupTitle" href="#" alt="Mídias Sociais">Mídias Sociais</a>
+                    <a class="groupTitle" href="#" alt="Mídias Sociais">
+                        <i aria-hidden="true">Mídias Sociais</i>
+                    </a>
 
                     <div class="bottomMidias">
 
                         <ul>
                             <li>
-                                <a class="iconFacebook hiddenText" title="Facebook" target="_blank" href="https://www.facebook.com/catho.com.br">Catho no Facebook</a>
+                                <a class="iconFacebook hiddenText" title="Facebook" target="_blank" href="https://www.facebook.com/catho.com.br">
+                                    <i aria-hidden="true">Catho no Facebook</i>
+                                </a>
                             </li>
                             <li>
-                                <a class="iconTwitter hiddenText" title="Twitter" target="_blank" href="https://twitter.com/Catho">Catho no Twitter</a>
+                                <a class="iconTwitter hiddenText" title="Twitter" target="_blank" href="https://twitter.com/Catho">
+                                    <i aria-hidden="true">Catho no Twitter</i>
+                                </a>
                             </li>
                             <li>
-                                <a class="iconLinkedin hiddenText" title="LinkedIn" target="_blank" href="http://www.linkedin.com/company/catho-online">Catho no LinkedIn</a>
+                                <a class="iconLinkedin hiddenText" title="LinkedIn" target="_blank" href="http://www.linkedin.com/company/catho-online">
+                                    <i aria-hidden="true">Catho no LinkedIn</i>
+                                </a>
                             </li>
                             <li>
-                                <a class="iconYoutube hiddenText" title="Youtube" target="_blank" href="http://www.youtube.com/user/Cathonoticias">Catho no Youtube</a>
+                                <a class="iconYoutube hiddenText" title="Youtube" target="_blank" href="http://www.youtube.com/user/Cathonoticias">
+                                    <i aria-hidden="true">Catho no Youtube</i>
+                                </a>
                             </li>
                             <li>
-                                <a class="iconGplus hiddenText" title="Google+" target="_blank" href="https://plus.google.com/+catho">Catho no Google+</a>
+                                <a class="iconGplus hiddenText" title="Google+" target="_blank" href="https://plus.google.com/+catho">
+                                    <i aria-hidden="true">Catho no Google+</i>
+                                </a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="bottomApps">
-                        <a class="groupTitle" href="#" title="Baixe nosso aplicativo">Baixe nosso aplicativo</a>
+                        <a class="groupTitle" href="#" title="Baixe nosso aplicativo">
+                            <i aria-hidden="true">Baixe nosso aplicativo</i>
+                        </a>
                         <ul>
                             <li>
                                 <a class="iconGooglePlay" title="Google Play" target="_blank" href="https://play.google.com/store/apps/details?id=br.com.appfactory.catho&hl=pt_BR">
@@ -1388,54 +1604,80 @@
                 <div class="bottomParceiros">
 
                     <ul>
-                        <a class="groupTitle" href="#" title="Parceiros Internacionais">Parceiros Internacionais</a>
+                        <a class="groupTitle" href="#" title="Parceiros Internacionais">
+                            <i aria-hidden="true">Parceiros Internacionais</i>
+                        </a>
                         <li>
-                            <a target="_blank" title="BabaJob" href="http://www.babajob.com">BabaJob</a>
+                            <a target="_blank" title="BabaJob" href="http://www.babajob.com">
+                                <i aria-hidden="true">BabaJob</i>
+                            </a>
                             <span>(Índia)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="BdJobs" href="http://www.bdjobs.com">BdJobs</a>
+                            <a target="_blank" title="BdJobs" href="http://www.bdjobs.com">
+                                <i aria-hidden="true">BdJobs</i>
+                            </a>
                             <span>(Bangladesh)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="Brighter Monday" href="https://www.brightermonday.com">Brighter Monday</a>
+                            <a target="_blank" title="Brighter Monday" href="https://www.brightermonday.com">
+                                <i aria-hidden="true">Brighter Monday</i>
+                            </a>
                             <span>(Leste da África)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="Jobberman" href="http://www.jobberman.com">Jobberman</a>
+                            <a target="_blank" title="Jobberman" href="http://www.jobberman.com">
+                                <i aria-hidden="true">Jobberman</i>
+                            </a>
                             <span>(Oeste da África)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="jobsDB" href="http://www.jobsdb.com">jobsDB</a>
+                            <a target="_blank" title="jobsDB" href="http://www.jobsdb.com">
+                                <i aria-hidden="true">jobsDB</i>
+                            </a>
                             <span>(Sudeste da Ásia)</span>
                         </li>
                     </ul>
                     <ul class="maisParceiros collapse">
                         <li>
-                            <a target="_blank" title="JobStreet" href="http://www.jobstreet.com">JobStreet </a>
+                            <a target="_blank" title="JobStreet" href="http://www.jobstreet.com">
+                                <i aria-hidden="true">JobStreet </i>
+                            </a>
                             <span>(Sudeste da Ásia)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="Jora Brasil" href="https://br.jora.com/">Jora</a>
+                            <a target="_blank" title="Jora Brasil" href="https://br.jora.com/">
+                                <i aria-hidden="true">Jora</i>
+                            </a>
                             <span>(Brasil)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="Jora" href="https://www.jora.com">Jora</a>
+                            <a target="_blank" title="Jora" href="https://www.jora.com">
+                                <i aria-hidden="true">Jora</i>
+                            </a>
                             <span>(Global)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="OCC Mundial" href="https://www.occ.com.mx">OCC Mundial</a>
+                            <a target="_blank" title="OCC Mundial" href="https://www.occ.com.mx">
+                                <i aria-hidden="true">OCC Mundial</i>
+                            </a>
                             <span>(México)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="SEEK" href="https://www.seek.com.au">SEEK</a>
+                            <a target="_blank" title="SEEK" href="https://www.seek.com.au">
+                                <i aria-hidden="true">SEEK</i>
+                            </a>
                             <span>(Austrália)</span>
                         </li>
                         <li>
-                            <a target="_blank" title="Workana" href="https://www.workana.com">Workana</a>
+                            <a target="_blank" title="Workana" href="https://www.workana.com">
+                                <i aria-hidden="true">Workana</i>
+                            </a>
                         </li>
                         <li>
-                            <a target="_blank" title="Zhaopin" href="http://www.zhaopin.com">Zhaopin</a>
+                            <a target="_blank" title="Zhaopin" href="http://www.zhaopin.com">
+                                <i aria-hidden="true">Zhaopin</i>
+                            </a>
                             <span>(China)</span>
                         </li>
                     </ul>
@@ -1453,7 +1695,9 @@
                 <span class="logoCathoFooter hiddenText">Catho</span>
 
                 <p>
-                    <span class="razaoSocial">Catho Online Ltda.</span>
+                    <a href="" title="Catho Online Ltda." class="razaoSocial">
+                        <i aria-hidden="true">Catho Online Ltda.</i>
+                    </a>
                     <span class="cnpj">CNPJ: 03.753.088/0001-00</span>
                     <span class="address">Alameda Juari, 262 - Barueri, SP - 06460-090</span>
 
@@ -1468,7 +1712,7 @@
     <script type="text/javascript" src="//static.catho.com.br/static/eb4dd218ca56bd8d3c24450e966455b2.js"></script>
 
     <script type="text/javascript" src="js/subMenu.js"></script>
-                                        
+
     <script type="text/javascript">
         //controle de site atual "b2b, b2c ou cursos" para JS
         var siteAtual = 'b2c',
