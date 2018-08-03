@@ -458,7 +458,7 @@
 
 
                          <li class="subMenuItem" aria-haspopup="true">
-                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)" aria-expanded="true" aria-label="Soluções para candidatos e dicas para o seu sucesso" id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix "><i aria-hidden="true">Soluções para candidatos</i></a>
+                                <a onclick="s_objectID='menu_suspenso_servicos'; $.fazRequisicao(this)"  aria-expanded="true"  aria-label="Soluções para candidatos e dicas para o seu sucesso" id="menu_suspenso_servicos" href="javascript:void(0);" class="noHref clearfix "><i aria-hidden="true">Soluções para candidatos</i></a>
                                 <ul class="subMenuServicos isDeslogado autoResizeAndOverflow" role="menubar">
 
                                     <li role="menuitem">
@@ -539,17 +539,18 @@
                     </nav>
                 </div>
 
-                <div class="actionsEntrar">
-                    <a href="javascript:void(0);" role="button" aria-label="Acesse para efetuar login caso já tenha cadastro" class="btnLogin" id="btnLogin">
+                <div class="actionsEntrar" >
+                    <a href="javascript:void(0);" role="button"  aria-label="Acesse para efetuar login caso já tenha cadastro" class="btnLogin" id="btnLogin">
                         <i aria-hidden="true">Login</i>
                     </a>
+                    <div class="loginSuspenso comBoxSocial" id="loginSuspenso">
+                            <iframe src="login.html" frameborder="0" scrolling="no" id="loginHttps"></iframe>
+                        </div>
                     <a href="#" aria-label="Assine a Catho e Consiga seu emprego ideal.">
                         <i aria-hidden="true">Assine</a>
                     </i>
 
-                    <div class="loginSuspenso comBoxSocial" id="loginSuspenso">
-                        <iframe src="login.html" frameborder="0" scrolling="no" id="loginHttps"></iframe>
-                    </div>
+
                 </div>
 
             </div>
@@ -633,14 +634,14 @@
 
 
                                     <span class="label">Cidade, estado ou região</span> -->
-                                    <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para fazer a busca."> 
+                                    <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para efetuar a busca."> 
                                     <input type="text" name="cidade" id="cidade" class="cargoDesejado" data-callback="BaseForm.validation.locality" data-suggestHeight="82px"
                                         value="" aria-hidden="true" placeholder="Cidade, estado ou região" autocomplete="off" />
                                     </label>
                                 <!--</div>
                                 <div class="envolveBtnBuscaVagas">-->
-                                    <label for="cidade" class="labelController" aria-label="Digite cidade, estado ou região para fazer a busca."> 
-                                    <input type="submit" value="buscar" role="button" class="buttonFlat buttonAzulFlat buttonBuscarVagas" />
+                                    <label for="fazerBusca" class="labelController" role="button" aria-label="Efetuar busca"> 
+                                    <input type="submit" id="fazerBusca" aria-hidden="true" value="buscar" class="buttonFlat buttonAzulFlat buttonBuscarVagas" />
                                     </label>
                            <!--     </div> -->
                             </form> 
