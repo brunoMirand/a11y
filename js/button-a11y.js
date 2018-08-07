@@ -4,11 +4,11 @@ function fonte(e) {
 	var fonte = parseInt(elemento.css('font-size'));
 	var bannerResp = $(".bannerResponsive");
 	var redesSociais = $(".dadosRedesSociais");
-	var cadastrar = $(".buttonAzulFlat");
+	var cadastrar = $(".bannerHumanizado .bannerResponsive .dadosRedesSociais .buttonAzulFlat");
 	var content = $('.content');
-
+	var contentTitulo = $('.vagasRecentes article section div .content h2');
+	var cont = $('.vagasRecentes article section div');
 	var t = $('.bannerHumanizado .bannerResponsive p');
-
 	var boxVagas = $('.vagasRecentes');
 
 	e == 'a' ? fonte++ : fonte=12;
@@ -17,12 +17,8 @@ function fonte(e) {
 		bannerResp.css('height', 120);
 		redesSociais.css('margin-right',840);
 		redesSociais.css('margin-top',0	);
-
-		console.log(fonte);
 		if (fonte == 12){
-			bannerResp.css('height', 75);
-			redesSociais.css('margin-top',20);
-			redesSociais.css('margin-right',0);
+			window.location = "index.html"; 	
 		}
 		if(fonte > 14){
 			elemento.css("height", 195);
@@ -37,11 +33,15 @@ function fonte(e) {
 				t.css('line-height', '32px');
 				t.css('text-align', 'left');
 				boxVagas.css("height",550);
-				boxVagas.css("background", "red");
+				boxVagas.css("background", '#f0f0f0');
 				content.css("height",225);
-				content.css("margin-top",'55px');
+				content.css("margin-top",'0px');
 				content.css("padding-bottom",10);
-				content.css("border","2px solid blue");
+				content.css("border","20px solid #f0f0f0");
+				contentTitulo.css("padding-bottom", "7px");
+				cont.css("width","99.7%");
+				cont.css("padding","10px");
+				boxVagas.css("height","845px");
 			}		
 		}else{
 			elemento.css("height", 185);
@@ -71,7 +71,7 @@ var contador =0;
 				var group = $('.bottomParceiros ul li span, .toggleListas span, .groupTitle b, .branco, i');
 				var footer = $('.bottomBarContainer,.navContainer,.titleFooter');
 				var content = $('.content');
-	
+
 				textoEmpresas.css('color',"#000");
 				group.css("color", '#fff');
 				footer.css("background", '#111');	
@@ -82,7 +82,7 @@ var contador =0;
 				link.css("color",'#fff');
 				subtitulo.css("color",'#fff');
 				button.css("background",'#000');
-				content.css({'color':'#fff','background': '#111'});
+				content.css({'color':'#fff','background': '#111'});		
 			}
 		});
 	});
