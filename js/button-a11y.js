@@ -10,6 +10,8 @@ function fonte(e) {
 	var cont = $('.vagasRecentes article section div');
 	var t = $('.bannerHumanizado .bannerResponsive p');
 	var boxVagas = $('.vagasRecentes');
+	var depoimentosFoto = $('.fotoUsuario');
+	var depoimentoTitulo = $('.geralDepoimentos article .texto h3');
 
 	e == 'a' ? fonte++ : fonte=12;
 	if(fonte < 20 && fonte > 11){
@@ -42,6 +44,8 @@ function fonte(e) {
 				cont.css("width","99.7%");
 				cont.css("padding","10px");
 				boxVagas.css("height","845px");
+				depoimentosFoto.css({'width':'120px','height': '120px'});
+				depoimentoTitulo.css('margin', '-60px 0 15px 0');
 			}		
 		}else{
 			elemento.css("height", 185);
