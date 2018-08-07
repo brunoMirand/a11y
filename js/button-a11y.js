@@ -75,6 +75,8 @@ var contador =0;
 				var group = $('.bottomParceiros ul li span, .toggleListas span, .groupTitle b, .branco, i');
 				var footer = $('.bottomBarContainer,.navContainer,.titleFooter');
 				var content = $('.content');
+				var subMenu = $('.header .menuHeader nav ul li ul li a, .header .menuHeader nav>ul li>ul');
+				var subTituloMenu = $('.header .menuHeader nav>ul li>ul li.subTitulo');
 
 				textoEmpresas.css('color',"#000");
 				group.css("color", '#fff');
@@ -86,7 +88,9 @@ var contador =0;
 				link.css("color",'#fff');
 				subtitulo.css("color",'#fff');
 				button.css("background",'#000');
-				content.css({'color':'#fff','background': '#111'});		
+				content.css({'color':'#fff','background': '#111'});
+				subMenu.css({'color': '#fff','background': '#111'});
+				subTituloMenu.css("color", "#000");		
 			}
 		});
 	});
