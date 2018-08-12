@@ -411,9 +411,9 @@
 
 
                 <div class="posicaoBotao">
-                        <button class="button"  title="Aumentar fonte" onClick="fonte('a');"> <i aria-hidden="true">A+</i> </button> 
-                        <button class="button"  title="Fonte padrão" onClick="fonte('d');"><i aria-hidden="true">A</i> </button> 
-                        <button class="buttonContraste"  title="Mudar o contraste do conteúdo." onClick="contraste()"><i aria-hidden="true"></i><span> &#9681; </span></i></button>
+                        <a class="button" role="button" title="Aumentar fonte" onClick="fonte('a');"><img src="img/fontemais.png">  </a> 
+                        <a class="button"  role="button" title="Fonte padrão" onClick="fonte('d');"><img src="img/fonte.png"> </a> 
+                        <a class="buttonContraste" role="button" title="Mudar o contraste do conteúdo." onClick="contraste()"><img src="img/contraste.png"></a> 
                 </div>
 
                 </div>
@@ -539,8 +539,10 @@
                 </div>
 
                 <div class="actionsEntrar">
-                    <a href="javascript:void(0);" role="button" aria-label="Acesse para efetuar login caso já tenha cadastro" class="btnLogin" id="btnLogin">
-                        <i aria-hidden="true">Login</i>
+                    <a href="javascript:void(0);" role="button" 
+                        aria-label="Acesse para efetuar login caso já tenha cadastro" 
+                            class="btnLogin" id="btnLogin">
+                                <i aria-hidden="true">Login</i>
                     </a>
                     <a href="#" aria-label="Assine a Catho e Consiga seu emprego ideal.">
                         <i aria-hidden="true">Assine</a>
@@ -585,7 +587,9 @@
                 <div class="dadosRedesSociais" id="cadastroSocial" data-socialid="300">
                     <ul>
                         <li>
+
                             <a href="#" id="btnFacebook" role="button" aria-label="Cadastre-se com o Facebook" class="facebook"></a>
+
                         </li>
                         <li>
                             <a href="#" id="btnGoogle" role="button" aria-label="Cadastre-se com o Gmail" class="gplus"></a>
