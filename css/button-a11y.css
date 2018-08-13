@@ -4,7 +4,7 @@
     color: #fff;
     border-radius: 5px;
     position: absolute;
-    left: 100%;
+    left: 1183px;
     margin-top: 120px;
 }
 
@@ -45,7 +45,7 @@
     background: #005da4;
     float: left;
     margin-bottom: 10px;
-    border-radius: 50%;
+    border-radius: 52px;
     line-height: 50px;
     text-align: center;
     overflow: hidden;
@@ -63,6 +63,8 @@
 
 .botao-redondo.buttonContraste {
     background: #696969;
+    cursor: pointer;
+    
 }
 
 .buttonContraste:hover, .button:hover{
